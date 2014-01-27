@@ -8,17 +8,34 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap
  *= require_self
  *= require_tree .
  */
 
-body, html { 
+html{
 	background: #333333;
+}
+body{
+	padding-top: 55px;
+}
+.navbar-brand img{
+	height: 40px;
+	margin-right:10px;
+   	margin-top:-15px;
+   	margin-bottom: -10px;	
+}
+.bop-navbar {
+	padding:0px 30px;
+    min-height: 55px;
+}
+.bop-navbar .navbar-nav > li > a:hover {
+	color: #1fc200;
 }
 #footer{
 	margin-top: 50px;
-min-height: 100px;
-background: #333333;
+	min-height: 100px;
+	background: #333333;
 }
 .footer{
 	padding-top: 30px;
