@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+body, html { 
+	background: #333333;
+}
+#footer{
+	margin-top: 50px;
+min-height: 100px;
+background: #333333;
+}
+.footer{
+	padding-top: 30px;
+	color: #fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer .section{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.footer #links{
+	text-align: left;
+}
