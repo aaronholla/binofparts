@@ -1,9 +1,18 @@
 Binofparts::Application.routes.draw do
+  resources :events
+
+  resources :teams
+
   devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  authenticated :user do
+    devise_scope :user do
+      root to: "registrations#show", :as => "profile"
+    end
+  end
   root 'home#index'
 
   # Example of regular route:
