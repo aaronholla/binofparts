@@ -48,3 +48,6 @@ html{
 .footer #links{
 	text-align: left;
 }
+.footer #links-xs{
+	text-align: center;
+}
