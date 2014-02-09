@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.boolean  "official"
   end
 
-  create_table "kop2009", force: true do |t|
+  create_table "kop2009s", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.string  "number"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.string  "picture"
   end
 
-  create_table "kop2010", force: true do |t|
+  create_table "kop2010s", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.string  "number"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.string  "picture"
   end
 
-  create_table "kop2011", force: true do |t|
+  create_table "kop2011s", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.string  "number"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.string  "picture"
   end
 
-  create_table "kop2012", force: true do |t|
+  create_table "kop2012s", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.string  "number"
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.string  "picture"
   end
 
-  create_table "kop2013", force: true do |t|
+  create_table "kop2013s", force: true do |t|
     t.string  "name"
     t.string  "description"
     t.string  "number"

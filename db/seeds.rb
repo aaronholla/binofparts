@@ -6,11 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-puts "Adding data to the database...\n
-		==================================="
+puts "\nAdding data to the database...
+================================================\n\n\n"
 
-puts "Events being added to database...\n
-		==================================="
+puts "\nEvents being added to database...
+================================================\n"
 
 jsonevents = ActiveSupport::JSON.decode(File.read('db/seeds/events.json'))
 
@@ -21,8 +21,8 @@ end
 
 puts "All Events Added."
 
-puts "Teams being added to database...\n
-		==================================="
+puts "\nTeams being added to database...
+================================================\n"
 
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/teams.json'))
 
@@ -32,3 +32,65 @@ jsonteams.each do |a|
 end
 
 puts "All Teams Added."
+
+puts "\n2013 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2013.json'))
+
+jsonteams.each do |a| 
+  Kop2013.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  puts "2013 Part added. #{a['name']}"
+end
+
+puts "All 2013 Parts Added."
+
+puts "\n2012 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2012.json'))
+
+jsonteams.each do |a| 
+  Kop2012.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  puts "2012 Part added. #{a['name']}"
+end
+
+puts "All 2012 Parts Added."
+
+puts "\n2011 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2011.json'))
+
+jsonteams.each do |a| 
+  Kop2011.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  puts "2011 Part added. #{a['name']}"
+end
+
+puts "All 2011 Parts Added."
+
+puts "\n2010 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2010.json'))
+
+jsonteams.each do |a| 
+  Kop2010.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  puts "2010 Part added. #{a['name']}"
+end
+
+puts "All 2010 Parts Added."
+
+puts "\n2009 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2009.json'))
+
+jsonteams.each do |a| 
+  Kop2009.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  puts "2009 Part added. #{a['name']}"
+end
+
+puts "All 2009 Parts Added."
+
+
