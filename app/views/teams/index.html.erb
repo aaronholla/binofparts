@@ -10,8 +10,11 @@
   </thead>
 
   <tbody>
-    <% @teams.each do |team| %>
+    <% @teams.first(50).each do |team| %>
       <tr>
+        <td><%= team.team_number %></td>
+        <td><%= team.nickname %></td>
+        <td><%= team.location %></td>
         <td><%= link_to 'Show', team %></td>
       </tr>
     <% end %>
