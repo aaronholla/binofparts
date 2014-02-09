@@ -1,0 +1,2 @@
+class KopController < ApplicationController
+end
