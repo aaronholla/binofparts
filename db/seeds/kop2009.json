@@ -1,0 +1,1474 @@
+[
+	{
+		"name": "C-Channel",
+		"description": "",
+		"number": "am-0202",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "Corner Connect",
+		"number": "am-0212",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "Gearbox Brace",
+		"number": "am-0203",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "Gearbox Bracket",
+		"number": "am-0204",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "3/8-16 x 7 screw",
+		"number": "am-1055",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "1.86 PVC Spacer",
+		"number": "am-0243",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "2.50 PVC Spacer",
+		"number": "am-0244",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "3/8-16 Nylock Nut",
+		"number": "87922050 (MSC)",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "1/4-20 x 1.75 SHCS",
+		"number": "71126155 (MSC)",
+		"qty": "32",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "1/4-20 x 5/8 SHCS",
+		"number": "80263072 (MSC)",
+		"qty": "40",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "1/4-20 Nylock Nut",
+		"number": "52591294 (MSC)",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "C-Base Chassis",
+		"description": "1/4 Washer",
+		"number": "",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wheel sprocket 22-tooth",
+		"description": "#35 #10 mntg holes in a 1.875 D circle 1.1 bore",
+		"number": "am-0245",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Battery Connector Safety Plug",
+		"description": "",
+		"number": "AM-0122",
+		"qty": "5",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Rover wheel (aka 2009 FIRST Slick Wheel)",
+		"description": "6 diameter acetal tread #10 mntg holes in a 1.875 D circle",
+		"number": "am-0210",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wheel bearings",
+		"description": "Double Shielded ID: 0.375 OD: 1.125 Width: 0.375",
+		"number": "am-0209",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Sprocket spacers",
+		"description": "#10 mntg holes in a 1.875 D circle",
+		"number": "am-0207",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Mount Plate",
+		"description": "",
+		"number": "am-0155",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Shaft Plate",
+		"description": "",
+		"number": "am-0261",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Output shaft",
+		"description": "",
+		"number": "am-0153",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Extrusion cover",
+		"description": "",
+		"number": "am-0260",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Large Cluster Gear",
+		"description": "",
+		"number": "am-0149",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Large Output Gear",
+		"description": "",
+		"number": "am-0150",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Small Hex Shaft",
+		"description": "",
+		"number": "am-0152",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Small Cluster Gear",
+		"description": "",
+		"number": "am-0151",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "CIM Gear 14 Tooth",
+		"description": "",
+		"number": "am-0034",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Spacer",
+		"description": "",
+		"number": "Toughbox_d10",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "FR6ZZ bearing",
+		"description": "",
+		"number": "am-0028",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "FR8ZZ bearing",
+		"description": "",
+		"number": "am-0030",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/4-20 x 2 SHCS",
+		"description": "",
+		"number": "71126239 (MSC)",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/4-20 nylock nut",
+		"description": "",
+		"number": "87922035 (MSC)",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/4 washer",
+		"description": "",
+		"number": "2994887 (MSC)",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/4-20 x 1/2 BHCS",
+		"description": "",
+		"number": "67563007 (MSC)",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "#10-32 x 1/2 SHCS",
+		"description": "",
+		"number": "9362336 (MSC)",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "2 x 2 x 14mm key",
+		"description": "",
+		"number": "am-0032",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/8 x 1/8 x 0.40 machine key",
+		"description": "",
+		"number": "am-1018",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "5/16 clip",
+		"description": "",
+		"number": "am-0033",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "1/2 E-Klip",
+		"description": "",
+		"number": "am-0206",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "5/16 washer",
+		"description": "",
+		"number": "67491605 (MSC)",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Camera Axis 206",
+		"description": "206 color camera MJPEG 16MB RAM 4MB Flash 4mm lens F2.0",
+		"number": "288635",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Radio Driver Station",
+		"description": "Simultaneous Dual-N Band Wireless Router 2.4GHz & 5 GHz (includes adapter ethernet",
+		"number": "WRT610N",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Radio Robot",
+		"description": "Dual-Band Wireless-N Gaming Adapter (includes adapter ethernet cable etc)",
+		"number": "WGA600N",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Speed Controller (Jaguar)",
+		"description": "Stellaris Brushed DC motor",
+		"number": "MDL-BDC",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Joystick Attack 3",
+		"description": "11 programmable buttons USB symmetrical handle",
+		"number": "963291-0403",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Mobile Device Controller",
+		"description": "compactRIO 400 MHz Freescale MPC5200 processor",
+		"number": "NI-cRIO-FRC",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Analog Input Module",
+		"description": "8 analog inputs å±10 V input range 500 kS/s aggregate sampling rate 12-bit resolution",
+		"number": "9201",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Digital I/O Module",
+		"description": "32-channel digital I/O 5 V/TTL sinking/sourcing digital I/O 1000 Vrms transient isolation ±30 V",
+		"number": "9403",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Digital Sourcing Module",
+		"description": "8-channel 100 ë_s digital output 6 to 30 V range sourcing digital output",
+		"number": "9472",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Control Layout",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Breakout board mounting hardware",
+		"description": "4-40 x 0.75‰Û",
+		"number": "92196A113",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Adapter camera 2-lead",
+		"description": "use this adapter for power from your robot use the adapter in the camera box for power from an",
+		"number": "SA106A-0512-6",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "DB37 Extension Cable",
+		"description": "3ft beige Male/Female",
+		"number": "02688",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Dongle",
+		"description": "Enable/disable dongle for Driver Station DE9 connector",
+		"number": "1",
+		"qty": "",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 14AWG Red",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 10AWG Red",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 10AWG Black",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Power connector Wago",
+		"description": "2-pole",
+		"number": "734-102",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Analog Breakout",
+		"description": "",
+		"number": "A003266",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Solenoid Breakout",
+		"description": "",
+		"number": "A003265",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Power Distribution Board",
+		"description": "8 40A outputs 12 20/30A outputs 5V 12V & 24V regulated outputs",
+		"number": "A003206",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Digital SideCar",
+		"description": "A003333",
+		"number": "2",
+		"qty": "",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Jumper",
+		"description": "female 2-pin shunt",
+		"number": "68786-102LF",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Servo",
+		"description": "42 oz./in. peak torque 0.19 sec./60å¡",
+		"number": "HS-322HD OR HS-325HD",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Relay Module (Spike)",
+		"description": "12V 20A Max",
+		"number": "SPIKE-RELAY-H",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Speed Controller (Victor 884)",
+		"description": "VICTOR-884-12-12",
+		"number": "FR-VIC884",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Driver Station",
+		"description": "",
+		"number": "DS-06062008-1.0",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "AC Adapter (for Driver Station)",
+		"description": "12VDC/1000mAF2 2.1mm x 5.5mmUL/CSA",
+		"number": "100870",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Power connector cRio",
+		"description": "female 4 poles",
+		"number": "CTF040V8",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "FRC Software Bundle",
+		"description": "LabVIEW for FRC WindRiver",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "National Instruments Literature Packet",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "2-wire jumper cable",
+		"description": "24‰Û",
+		"number": "03203",
+		"qty": "5",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Servo Y-splitter cable",
+		"description": "12‰Û",
+		"number": "788 (modified plastic covers removed)",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "RC Extension cable",
+		"description": "36‰Û 22AWG wire male/female",
+		"number": "RC-218FJ36",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "20Amp circuit breaker",
+		"description": "auto-reset",
+		"number": "VB3-A20-F57",
+		"qty": "5",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "30Amp circuit breaker",
+		"description": "auto-reset",
+		"number": "VB3-A30-F57",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "40Amp circuit breaker",
+		"description": "auto-reset",
+		"number": "MX5-A40",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Cable Assembly Ethernet",
+		"description": "2ft gray",
+		"number": "219241-2",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Cable Assembly Ethernet crossover",
+		"description": "5ft orange",
+		"number": "219153-3",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 18AWG Red",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wago Tool",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wind River Installation Notes",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Brass bag",
+		"description": "",
+		"number": "PKT12326",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 6AWG Black",
+		"description": "10‰Ûª #6 AWG Black",
+		"number": "M3391-101",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Wire 6AWG Red",
+		"description": "10‰Ûª #6 AWG Red",
+		"number": "M3391-102",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Denso Window Motor - Left",
+		"description": "12V DC",
+		"number": "262100-3040",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Denso Window Motor - Right",
+		"description": "12V DC",
+		"number": "262100-3030",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Compact Fan (Large)",
+		"description": "12 Vdc",
+		"number": "4212/12H-520 or 4212/2-534",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Terminal Lugs",
+		"description": "6-14 ga solderless lug mechanical",
+		"number": "KPA4CUP",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Tie wraps 4‰Û",
+		"description": "UNIRAP 4‰Û black 100 ct",
+		"number": "CT18075C",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Tie wraps 8‰Û",
+		"description": "UNIRAP 8‰Û black 100 ct",
+		"number": "CT50175C",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Terminal Lugs",
+		"description": "6-14 ga solderless lug compression copper",
+		"number": "YAZV6CTC14FX",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Motor/Gearbox assembly",
+		"description": "12VDC w/ 16 tooth pinion -9015 motor",
+		"number": "00968-2910",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pnuematic tubing yellow",
+		"description": "(1/4 OD x 0.160 ID) x 50‰Ûª length",
+		"number": "1J-151-48P-FW",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Air Compressor",
+		"description": "12VDC",
+		"number": "405ADC38/12",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Globe Motor",
+		"description": "12Vdc with drive assembly",
+		"number": "409A587",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Lead Screw w/ nut",
+		"description": "",
+		"number": "BF6029 or BF7030 x 13",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Keyang motor 12-tooth",
+		"description": "",
+		"number": "16631023",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pool NoodleSample bumper material",
+		"description": "",
+		"number": "1",
+		"qty": "",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Flowers Tote",
+		"description": "27‰Û x 17‰Û x 12‰Û Attached lid",
+		"number": "DC2717-12",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Battery Charger",
+		"description": "12V 6Amp automatic",
+		"number": "SC-600A",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Lazy Susan",
+		"description": "12‰Û",
+		"number": "12C",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "IEC Rotary Limit Switch",
+		"description": "",
+		"number": "AAP2T51Z11",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Terminal blocks",
+		"description": "12 pole w/ wire protector",
+		"number": "BM-M092CS",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Push button",
+		"description": "",
+		"number": "GCX1125",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "standoff male/female (for DS and DSC)",
+		"description": "4-40 0.187‰Ûª long",
+		"number": "219-1048",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Nut bracket assembly",
+		"description": "4-40 keps",
+		"number": "1137403",
+		"qty": "16",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Screw servo mounting",
+		"description": "4-40 3/4‰Û",
+		"number": "1128667",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Screw camera pivot",
+		"description": "8-32 3/8‰Û",
+		"number": "1172396",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Nut camera pivot",
+		"description": "8-32 nylock",
+		"number": "1170856",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Screw horn/bracket assembly",
+		"description": "4-40 3/8‰Û",
+		"number": "1172482",
+		"qty": "8",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Screw hex servo mount",
+		"description": "4-40 1/2‰Û low profile",
+		"number": "0170662",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Nylon spacer",
+		"description": "1/4‰Û",
+		"number": "",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "spring lock washer",
+		"description": "#4 screw size",
+		"number": "91102A720",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Axis Case",
+		"description": "",
+		"number": "Axis Case",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Base",
+		"description": "",
+		"number": "Axis Case",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pan Plate",
+		"description": "",
+		"number": "Axis Case",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Servo Brace",
+		"description": "",
+		"number": "Axis Case",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Compact fan (mini)",
+		"description": "12 Vdc",
+		"number": "412",
+		"qty": "6",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Supporting sprocket",
+		"description": "",
+		"number": "16-5M09-6FA3",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Larger Supporting sprocket",
+		"description": "",
+		"number": "32-5M15-6A3",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Sprocket",
+		"description": "56 tooth 15mm wide HTD unfinished minimum plain bore sprocket",
+		"number": "56-5M15-6A5",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Belting",
+		"description": "535 mm long 9mm wide 5mm pitch GT2 belt",
+		"number": "5MR-535-09",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Belting",
+		"description": "535 mm long 15mm wide 5mm pitch GT2 belt",
+		"number": "5MR-535-15",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Belting",
+		"description": "5MR900-15",
+		"number": "900mm long 15mm wide 5mm pitch GT2 belt",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Microswitch",
+		"description": "",
+		"number": "V7-2B17D8-048",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Teflon tape",
+		"description": "roll 1/4 x 520'",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Latex Tubing",
+		"description": "1/4‰Û ID x 3/8‰Û OD x 5‰Ûª L",
+		"number": "5234k44",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Mabuchi motor",
+		"description": "",
+		"number": "RS385SH-2270",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Secondary Regulator",
+		"description": "",
+		"number": "101-3002-1",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Secondary Regulator Bracket",
+		"description": "Mounting bracket",
+		"number": "13536",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Master Link for Chain",
+		"description": "#35 Link",
+		"number": "",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pressure Switch",
+		"description": "Opens 115psi;  Closes 95psi",
+		"number": "SM-2B-115R/443",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Main Regulator adjustable",
+		"description": "",
+		"number": "R07-100-RNEA",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Main Regulator Mounting Kit",
+		"description": "Bracket and Nut",
+		"number": "18-025-003",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pressure Gauge",
+		"description": "1/8 NPT 0 - 160 psi",
+		"number": "18-013-212",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Circuit Breaker",
+		"description": "120A Automotive style",
+		"number": "CB3-SM-120",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Pressure Gauge",
+		"description": "1/8 NPT 0 - 160 psi",
+		"number": "9690242",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "OEM Miniature Optical Kit Encoder",
+		"description": "250 CPR 1/4‰Û bore",
+		"number": "E4P-250-250-D-D-D-B",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "4-pin encoder connector",
+		"description": "26AWG wire",
+		"number": "CA-MIC4-W4-NC-1",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "DryLin S Aluminum Shaft",
+		"description": "24‰Û Hard Anodized",
+		"number": "AWI-10",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "igubal Flange Bearing",
+		"description": "",
+		"number": "EFOI-10",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "igubal Rod End Bearing",
+		"description": "",
+		"number": "EBRI-10R",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Energy Chain Cable Carrier",
+		"description": "3ft long",
+		"number": "045-10-018-0",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Energy Chain Mounting Bracket Set",
+		"description": "",
+		"number": "0450-10-12",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "DryLin N Linear Guide System",
+		"description": "",
+		"number": "NK02-40-2-610",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "iglide bearing",
+		"description": "",
+		"number": "JSI-1012-08",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "iglide bearing",
+		"description": "",
+		"number": "JFI-1012-08",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "iglide bearing",
+		"description": "",
+		"number": "MTI-10",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "iglide bearing",
+		"description": "",
+		"number": "MCI-06-02",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Orbit Ball",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Target material pink",
+		"description": "1000 Denier Cordura Fabric hot pink #1201",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Target material green",
+		"description": "1000 Denier Cordura Fabric flourescent green #1089",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Trailer Hitch Spacer",
+		"description": "1‰Û square 7‰Û long",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Quick-Disconnect Battery Connector",
+		"description": "#6 wire pair red & black 12‰Û tail",
+		"number": "6331G1",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Accumulator",
+		"description": "Volume tank 2 bore by 6 long",
+		"number": "AVT-32-16",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Solenoid valve",
+		"description": "12V DC solenoid single valve",
+		"number": "13026684",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Gloves pair",
+		"description": "",
+		"number": "2RA69",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "2.5‰Û CIM Motor",
+		"description": "12V DC 2.5‰Û diameter",
+		"number": "FR801-001",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Kamen Tote",
+		"description": "27‰Û x 17‰Û x 12‰Û Attached lid",
+		"number": "DC2717-12",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Chain",
+		"description": "#35 10‰Ûª length",
+		"number": "",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Output sprocket",
+		"description": "#35 15 Tooth 1/2‰Û bore 1/8‰Û keyway",
+		"number": "36684974 / H35B15F-1/2",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Coupler Denso motor",
+		"description": "black injection molded plastic 6 tooth",
+		"number": "Denso-6",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Coupler Keyang motor 12 tooth",
+		"description": "",
+		"number": "Keyang-12",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Panel signal device",
+		"description": "12V Light",
+		"number": "855PB-B12ME522",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Ring Terminal",
+		"description": "PIDG #6 stud 24-20AWG",
+		"number": "323986",
+		"qty": "4",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Ring Terminal",
+		"description": "PIDG #6 stud 16-14AWG",
+		"number": "320619",
+		"qty": "10",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Ring Terminal",
+		"description": "#6ga- 1/4‰Û stud Plasti-Grip",
+		"number": "52042-3",
+		"qty": "10",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Ring Terminal",
+		"description": "12-10ga Ring Lugs PIDG",
+		"number": "35149",
+		"qty": "10",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Quick Disconnect female",
+		"description": "10-12ga .250d FASTON",
+		"number": "4-520448-2",
+		"qty": "20",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Quick Disconnect female",
+		"description": "16-14ga .250d FASTON",
+		"number": "3-520408-2",
+		"qty": "10",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Quick Disconnect male",
+		"description": "12-10ga .250d",
+		"number": "4-521098-2",
+		"qty": "10",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Spade terminal",
+		"description": "PIDG #8 stud 12-10 AWG",
+		"number": "32588",
+		"qty": "20",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Motor RS-545",
+		"description": "",
+		"number": "",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Sensor Board - Acclerometer",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Sensor Board - Gyroscope",
+		"description": "",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Battery",
+		"description": "12 volt 18 AH Non-Spillable",
+		"number": "ES17-12",
+		"qty": "2",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Relief Valve",
+		"description": "120 psi relief valve",
+		"number": "16-004-011",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Autodesk Inventor Professional 2009",
+		"description": "www.autodesk.com/firstplace (10 licenses per team)",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Autodesk 3ds Max 2009",
+		"description": "www.autodesk.com/firstplace (5 licenses per team)",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Custom Bimba Cylinders",
+		"description": "www.bimba.com",
+		"number": "",
+		"qty": "3",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "Altium Designer",
+		"description": "www.altium.com/frc2009",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "PTC Pro/ENGINEER",
+		"description": "http://www.ptc.com/go/frcregistration",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "PTC Windchill",
+		"description": "http://www.ptc.com/go/frcregistration",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	},
+	{
+		"name": "PTC Mathcad",
+		"description": "http://www.ptc.com/go/frcregistration",
+		"number": "",
+		"qty": "1",
+		"category": "",
+		"picture": ""
+	}
+]
