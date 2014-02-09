@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208195818) do
+ActiveRecord::Schema.define(version: 20140209103722) do
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -22,6 +22,51 @@ ActiveRecord::Schema.define(version: 20140208195818) do
     t.datetime "start_date"
     t.datetime "end_date"
     t.boolean  "official"
+  end
+
+  create_table "kop2009", force: true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "number"
+    t.integer "qty"
+    t.string  "category"
+    t.string  "picture"
+  end
+
+  create_table "kop2010", force: true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "number"
+    t.integer "qty"
+    t.string  "category"
+    t.string  "picture"
+  end
+
+  create_table "kop2011", force: true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "number"
+    t.integer "qty"
+    t.string  "category"
+    t.string  "picture"
+  end
+
+  create_table "kop2012", force: true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "number"
+    t.integer "qty"
+    t.string  "category"
+    t.string  "picture"
+  end
+
+  create_table "kop2013", force: true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.string  "number"
+    t.integer "qty"
+    t.string  "category"
+    t.string  "picture"
   end
 
   create_table "teams", force: true do |t|
