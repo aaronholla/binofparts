@@ -1,6 +1,6 @@
 class CreateKop2010 < ActiveRecord::Migration
   def change
-    create_table :kop2010 do |t|
+    create_table :kop2010s do |t|
     	t.string  :name
     	t.string  :description
     	t.string  :number
