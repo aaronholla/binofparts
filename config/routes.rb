@@ -1,7 +1,17 @@
 Binofparts::Application.routes.draw do
-  resources :events
+  resources :events, only: %w(index show)
 
-  resources :teams
+  resources :teams, only: %w(index show)
+
+  get 'kop' => 'kop#index'
+
+  namespace :kop do
+    resources :kop2013, only: %w(index show), path: "/2013"
+    resources :kop2012, only: %w(index show), path: "/2012"
+    resources :kop2011, only: %w(index show), path: "/2011"
+    resources :kop2010, only: %w(index show), path: "/2010"
+    resources :kop2009, only: %w(index show), path: "/2009"
+  end
 
   devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
