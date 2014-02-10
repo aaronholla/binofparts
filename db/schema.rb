@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140209103722) do
+ActiveRecord::Schema.define(version: 20140210200104) do
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -84,6 +84,8 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.string   "events",       default: "{}"
   end
 
+  add_index "teams", ["team_number"], name: "index_teams_on_team_number", unique: true
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: ""
@@ -104,6 +106,9 @@ ActiveRecord::Schema.define(version: 20140209103722) do
     t.integer  "invitation_limit"
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
+    t.integer  "team_number_id"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
