@@ -49,7 +49,6 @@
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 		    	<li><%= link_to 'Login', new_user_session_path  %></li>
-				  <!-- <li><a href="/register.php">Register</a></li> -->
 		    </ul>
 		</div>
 		<% end %>
@@ -61,21 +60,27 @@
 <div id="footer">
 	<div class="footer col-xs-4 col-sm-8 col-md-6 col-xs-offset-4 col-sm-offset-2 col-md-offset-3">
 			<div class="col-sm-6 hidden-xs section" id="links">
-				<a href="http://blog.binofparts.com">Blog</a> &middot;
-				<a target="_blank" href="https://facebook.com/binofparts">Facebook</a> &middot;
-				<a target="_blank" href="https://twitter.com/binofparts">Twitter</a>
+				<%= link_to 'Facebook', "http://blog.binofparts.com" %> &middot;
+				<% if user_signed_in? %>
+				<%= link_to 'About', home_path %> &middot;
+				<% end %>
+				<%= link_to 'Facebook', "https://facebook.com/binofparts" %> &middot;
+				<%= link_to 'Twitter', "https://twitter.com/binofparts" %>
 				<p>&copy; Bin of Parts, Inc</p>
 			</div>
 			<div class="col-sm-6 visible-xs section" id="links-xs">
-				<a href="http://blog.binofparts.com">Blog</a> &middot;
-				<a target="_blank" href="https://facebook.com/binofparts">Facebook</a> &middot;
-				<a target="_blank" href="https://twitter.com/binofparts">Twitter</a>
+				<%= link_to 'Facebook', "http://blog.binofparts.com" %> &middot;
+				<% if user_signed_in? %>
+				<%= link_to 'About', home_path %> &middot;
+				<% end %>
+				<%= link_to 'Facebook', "https://facebook.com/binofparts" %> &middot;
+				<%= link_to 'Twitter', "https://twitter.com/binofparts" %>
 			</div>
 			<div class="col-sm-3 section" id="mixpanel">
-				<a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+				<%= link_to image_tag('//cdn.mxpnl.com/site_media/images/partner/badge_light.png', alt: 'Mobile Analytics'), "https://mixpanel.com/f/partner" %>
 			</div>
 			<div class="col-sm-3 section" id="digitalocean">
-				<a href="https://www.digitalocean.com"><%= image_tag "digitalocean-badge-white.png" %></a>
+				<%= link_to image_tag('digitalocean-badge-white.png', alt: 'Digital Ocean Badge'), "https://www.digitalocean.com" %>
 			</div>
 	</div>
 </div>
