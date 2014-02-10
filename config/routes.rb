@@ -13,7 +13,7 @@ Binofparts::Application.routes.draw do
     resources :kop2009, only: %w(index show), path: "/2009"
   end
 
-  devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  devise_for :users, :controllers => { :invitations => 'users/invitations' }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
