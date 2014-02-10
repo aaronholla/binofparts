@@ -20,7 +20,7 @@ Binofparts::Application.routes.draw do
   # You can have the root of your site routed with "root"
   authenticated :user do
     devise_scope :user do
-      root to: "registrations#show", :as => "profile"
+      root to: "home#index", :as => "home"
     end
   end
   root 'home#index'
