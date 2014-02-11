@@ -1,0 +1,22 @@
+<h1>Team <%= @myteamnumber %> </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myteam.each do |person| %>
+      <tr>
+        <td><%= person.email %></td>
+        <td><%= person.first_name %> <%= person.last_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

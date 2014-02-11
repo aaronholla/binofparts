@@ -1,9 +1,12 @@
 Binofparts::Application.routes.draw do
+
   resources :events, only: %w(index show)
 
   resources :teams, only: %w(index show)
 
   get 'kop' => 'kop#index'
+
+  get 'myteam' => 'myteam#index'
 
   namespace :kop do
     resources :kop2013, only: %w(index show), path: "/2013"
