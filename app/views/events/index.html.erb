@@ -1,11 +1,11 @@
 <% content_for :title, "- Events" %>
 <h1>Listing events</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <th></th>
-      <th></th>
+      <th><%= sortable "name", "Name" %></th>
+      <th><%= sortable "start_date", "Dates" %></th>
       <th></th>
     </tr>
   </thead>
@@ -13,7 +13,8 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to event.name, event %></td>
+        <td><%= event.start_date.strftime("%A %B %d") %> to <%= event.end_date.strftime("%A %B %d") %></td>
       </tr>
     <% end %>
   </tbody>
