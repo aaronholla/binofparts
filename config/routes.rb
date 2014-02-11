@@ -1,12 +1,16 @@
 Binofparts::Application.routes.draw do
 
-  resources :events, only: %w(index show)
+  resources :events, only: %w(index)
 
-  resources :teams, only: %w(index show)
+  resources :teams, only: %w(index)
 
-  get 'kop' => 'kop#index'
+  get 'event/:id' => 'events#show', :as => "event_path"
 
-  get 'myteam' => 'myteam#index'
+  get 'team/:id' => 'teams#show', :as => "team_path"
+
+  get 'kop' => 'kop#index', :as => "kop_path"
+
+  get 'myteam' => 'myteam#index', :as => "myteam_path"
 
   namespace :kop do
     resources :kop2013, only: %w(index show), path: "/2013"
