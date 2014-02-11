@@ -1,2 +1,2 @@
-module MyteamsHelper
+module MyteamHelper
 end
