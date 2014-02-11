@@ -93,19 +93,19 @@ end
 
 puts "All 2009 Parts Added."
 
-def adduser(email, password)
-  @user = User.invite!(:email => email) do |u|
+def adduser(email, password, first_name, last_name, team_number)
+  @user = User.invite!(:email => email, :first_name => first_name, :last_name => last_name, :team_number_id => team_number ) do |u|
     u.skip_invitation = true
   end
   token = Devise::VERSION >= "3.1.0" ? @user.instance_variable_get(:@raw_invitation_token) : @user.invitation_token
-  User.accept_invitation!(:invitation_token => token, :password => password, :password_confirmation => password)
+  User.accept_invitation!(:invitation_token => token, :password => password, :password_confirmation => password, :first_name => first_name, :last_name => last_name, :team_number_id => team_number )
 
-  puts "Created User #{email} with password #{password}"
+  puts "Created User\n Email: #{email}\n Password: #{password}\n Name: #{first_name} #{last_name} \n Team: #{team_number} \n"
   @user
 end
 
 puts "\nCreating Test User...
 ================================================\n"
 
-user1 = adduser("user@example.com", "password")
+user1 = adduser("user@example.com", "password", "test", "user", "1612")
 
