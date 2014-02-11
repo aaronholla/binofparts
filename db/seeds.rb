@@ -108,4 +108,5 @@ puts "\nCreating Test User...
 ================================================\n"
 
 user1 = adduser("user@example.com", "password", "test", "user", "1612")
+user1 = adduser("user2@example.com", "password", "Another", "user", "21")
 
