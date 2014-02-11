@@ -4,6 +4,8 @@ Binofparts::Application.routes.draw do
 
   resources :teams, only: %w(index show)
 
+  get 'about' => 'about#index'
+
   get 'kop' => 'kop#index'
 
   get 'myteam' => 'myteam#index'
@@ -26,7 +28,7 @@ Binofparts::Application.routes.draw do
       root to: "home#index", :as => "home"
     end
   end
-  root 'home#index'
+  root 'about#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
