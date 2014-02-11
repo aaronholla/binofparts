@@ -37,6 +37,19 @@ html{
 .bop-navbar .navbar-nav > li > a:hover {
 	color: #1fc200;
 }
+th .current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+th .asc {
+  background-image: url(/images/up_arrow.gif);
+}
+
+th .desc {
+  background-image: url(/images/down_arrow.gif);
+}
 #footer{
 	margin-top: 50px;
 	min-height: 100px;

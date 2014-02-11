@@ -1,22 +1,22 @@
 <% content_for :title, "- Teams" %>
 <h1>Listing teams</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th><%= sortable "team_number", "#" %></th>
+      <th><%= sortable "nickname", "Name" %></th>
+      <th><%= sortable "location", "Location" %></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @teams.first(50).each do |team| %>
+    <% @teams.each do |team| %>
       <tr>
         <td><%= team.team_number %></td>
         <td><%= team.nickname %></td>
         <td><%= team.location %></td>
-        <td><%= link_to 'Show', team %></td>
+        <td><%= link_to 'View', team_path %></td>
       </tr>
     <% end %>
   </tbody>
