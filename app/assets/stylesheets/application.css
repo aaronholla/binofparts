@@ -26,7 +26,13 @@ html{
 }
 .bop-navbar {
 	padding:0px 35px;
-    max-height: 55px;
+    min-height: 55px;
+}
+.dropdown-toggle {
+	height: 55px;
+}
+.dropdown-menu > li {
+	height: 25px;
 }
 .bop-navbar .navbar-nav > li > a:hover {
 	color: #1fc200;
