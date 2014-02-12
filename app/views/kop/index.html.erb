@@ -1,7 +1,32 @@
 <% content_for :title, "- Kit of Parts" %>
-
-<%= link_to '2013 Kit of Parts', kop_kop2013_index_path %>
-<%= link_to '2012 Kit of Parts', kop_kop2012_index_path %>
-<%= link_to '2011 Kit of Parts', kop_kop2011_index_path %>
-<%= link_to '2010 Kit of Parts', kop_kop2010_index_path %>
-<%= link_to '2009 Kit of Parts', kop_kop2009_index_path %>
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 hidden-xs">
+				<%= link_to image_tag("FRCicon.gif", class: "FRCicon"), "http://www.usfirst.org/roboticsprograms/frc", { :target=>"_blank" } %>
+			</div>
+			<div class="col-sm-4">
+				<h2>Kickoff 2014</h2>
+				<a role="button" class="btn btn-default btn-block btn-lg disabled" href="">View 2014 Kit of Parts</a>
+				<p>Come back on January 4th, 2014 to view this years Kit of Parts.</p>
+			</div>
+			<div class="col-sm-4 tba">
+				<i>Team & Event Data Provided By</i>
+				<div class="tba-logo"><%= link_to (image_tag("tba_lamp.png")+"The Blue Alliance").html_safe, "http://thebluealliance.com", { :target=>"_blank"} %></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container kop-gamelist">
+	<div class="row">
+	  <div class="col-xs-12 col-sm-6">
+	  	<%= link_to image_tag("2013-Game.jpg", class: "kop-game"), kop_kop2013_index_path, { :class=>"kop-thumb thumbnail" } %>
+	  	<%= link_to image_tag("2012-Game.jpg", class: "kop-game"), kop_kop2012_index_path, { :class=>"kop-thumb thumbnail" } %>
+	  </div>
+	  <div class="col-xs-12 col-sm-6 ">
+	  	<%= link_to image_tag("2011-Game.jpg", class: "kop-game"), kop_kop2011_index_path, { :class=>"kop-thumb thumbnail" } %>
+	  	<%= link_to image_tag("2010-Game.jpg", class: "kop-game"), kop_kop2010_index_path, { :class=>"kop-thumb thumbnail" } %>
+	  	<%= link_to image_tag("2009-Game.jpg", class: "kop-game"), kop_kop2009_index_path, { :class=>"kop-thumb thumbnail" } %>
+	  </div>
+	</div>
+</div>

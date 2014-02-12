@@ -1,3 +1,25 @@
 <% content_for :title, "- 2011 Kit of Parts" %>
-
-List of parts
+<div class="container">
+	<ul class="media-list col-md-6">
+		<% @first_half.each do |part| %>
+			<li class="media">
+				<div class="left"><div class="imgcenter"></div><%= image_tag("kop2011/#{part.picture}", class: "media-object") %></div>
+				<div class="media-body">
+					<h4 class="media-heading"><%= part.name %></h4>
+				</div>
+				<div class="right"><a>QTY</a></br></br><a><%=  part.qty %></a></div>
+			</li>
+		<% end %>
+	</ul>
+	<ul class="media-list col-md-6">
+		<% @second_half.each do |part| %>
+			<li class="media">
+				<div class="left"><div class="imgcenter"></div><%= image_tag("kop2011/#{part.picture}", class: "media-object") %></div>
+				<div class="media-body">
+					<h4 class="media-heading"><%= part.name %></h4>
+				</div>
+				<div class="right"><a>QTY</a></br></br><a><%=  part.qty %></a></div>
+			</li>
+		<% end %>
+	</ul>
+</div>
