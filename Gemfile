@@ -34,6 +34,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
