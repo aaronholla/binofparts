@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Part:</strong>
+  <%= @request.part_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @request.year %>
+</p>
+
+<p>
+  <strong>Qty:</strong>
+  <%= @request.qty %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @request.event_id %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @request.team_id %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

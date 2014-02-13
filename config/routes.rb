@@ -1,5 +1,7 @@
 Binofparts::Application.routes.draw do
 
+  resources :requests
+
   resources :events, only: %w(index show)
 
   resources :teams, only: %w(index show)
@@ -25,7 +27,7 @@ Binofparts::Application.routes.draw do
   # You can have the root of your site routed with "root"
   authenticated :user do
     devise_scope :user do
-      root to: "home#index", :as => "home"
+      root to: "requests#index", :as => "home"
     end
   end
   root 'about#index'
