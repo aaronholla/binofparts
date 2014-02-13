@@ -19,14 +19,14 @@
 		    </button>
 		    <a class="navbar-brand" href="/"><%= image_tag "bop-logo-small.png", height: '40', width: '66' %></a>
 		</div>
-		<% if user_signed_in? %>
+		
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    	<ul class="nav navbar-nav">
-	        	<li><a href="/inventory">Inventory</a></li>
 	            <li><%= link_to 'Kit of Parts', kop_path  %></li>
 	            <li><%= link_to 'Teams', teams_path  %></li>
 	            <li><%= link_to 'Events', events_path  %></li>
 	        </ul>
+	        <% if user_signed_in? %>
           	<ul class="nav navbar-nav navbar-right">
               	<li class="dropdown">
                 	<a href="" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.first_name %> <%= current_user.last_name %> <b class="caret"></b></a>
@@ -38,19 +38,12 @@
 	                </ul>
               	</li>
           	</ul>
-	    </div>
-		<% else %>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    <ul class="nav navbar-nav">
-		    	<li><%= link_to 'Kit of Parts', kop_path  %></li>
-	            <li><%= link_to 'Teams', teams_path  %></li>
-	            <li><%= link_to 'Events', events_path  %></li>
-		    </ul>
-		    <ul class="nav navbar-nav navbar-right">
+          	<% else %>
+          	<ul class="nav navbar-nav navbar-right">
 		    	<li><%= link_to 'Login', new_user_session_path  %></li>
 		    </ul>
-		</div>
-		<% end %>
+		    <% end %>
+	    </div>
 	</div>
 </nav>
 <div class="content">
@@ -65,7 +58,7 @@
 				<% end %>
 				<%= link_to 'Facebook', "https://facebook.com/binofparts" %> &middot;
 				<%= link_to 'Twitter', "https://twitter.com/binofparts" %>
-				<p>&copy; <%= Time.now.year %> Bin of Parts, Inc</p>
+				<p>&copy; <%= Time.now.year %> Bin of Parts, Inc.</p>
 			</div>
 			<div class="col-sm-6 visible-xs section" id="links-xs">
 				<%= link_to 'Blog', "http://blog.binofparts.com" %> &middot;
