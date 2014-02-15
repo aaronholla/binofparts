@@ -26,6 +26,7 @@ class RequestsController < ApplicationController
   # POST /requests.json
   def create
     @request = Request.new(request_params)
+    @request.team_id = current_user.team_number_id
 
     respond_to do |format|
       if @request.save

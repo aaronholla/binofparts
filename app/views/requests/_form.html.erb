@@ -17,19 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :year %><br>
-    <%= f.number_field :year %>
+    <%= f.select :year, options_for_select([['2013', '2013'], ['2012', '2012'], ['2011', '2011'], ['2010', '2010'], ['2009', '2009']]) %>
   </div>
   <div class="field">
     <%= f.label :qty %><br>
     <%= f.number_field :qty %>
-  </div>
-  <div class="field">
-    <%= f.label :event_id %><br>
-    <%= f.number_field :event_id %>
-  </div>
-  <div class="field">
-    <%= f.label :team_id %><br>
-    <%= f.number_field :team_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
