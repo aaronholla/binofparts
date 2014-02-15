@@ -1,1 +1,30 @@
-<%= link_to 'Back', events_path %>
+<div class="container">
+	<% if user_signed_in? %>
+		<div class="new right">
+			<a href="" class="btn btn-success">New Request</a>
+			<!-- Add javascript for button to show the requests form div below. -->
+		</div>
+	<% end %>
+	<h2><%= @event.name %></h2>
+	<%= @event.start_date.strftime("%A %B %d") %>
+	<hr>
+
+	<ul class="media-list col-md-6">
+		<% @requests.each do |r| %>
+			<li class="media">
+				<div class="media-body">
+					<h3 class="media-heading">Team: <%= r.team_id %></h3>
+					<h4>Part Id: <%= r.part_id %></h4>
+				</div>
+				<div class="right"><a>QTY</a></br></br><a><%=  r.qty %></a></div>
+			</li>
+		<% end %>
+	</ul>
+	<%= link_to 'Back', events_path %>
+
+	<% if user_signed_in? %>
+		<div class="request_form">
+			<%= render 'requests/form', :object => @request %>
+		</div>
+	<% end %>
+</div>

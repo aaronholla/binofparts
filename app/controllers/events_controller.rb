@@ -11,6 +11,9 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @requests = @event.requests.first(10)
+    @request = Request.new
+    @request.event_id = @event.id
   end
 
   private
