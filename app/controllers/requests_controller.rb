@@ -20,23 +20,36 @@ class RequestsController < ApplicationController
 
   # GET /requests/1/edit
   def edit
+    set_request
+    unless current_user.team_number_id == @request.team_id
+        redirect_to requests_path, notice: "You cannot edit this request."
+    end 
   end
 
   # POST /requests
   # POST /requests.json
   def create
-    @request = Request.new(request_params)
-    @request.team_id = current_user.team_number_id
+    
+    if params.has_key?(:event_id)
+      @event = Event.find(params[:event_id])
 
-    respond_to do |format|
-      if @request.save
-        format.html { redirect_to @request, notice: 'Request was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @request }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @request.errors, status: :unprocessable_entity }
-      end
+      @request = @event.requests.create(request_params)
+      @request.team_id = current_user.team_number_id
+      redirect_to event_path(@event)
+    else
+      @request = Request.new(request_params)
+      @request.team_id = current_user.team_number_id
     end
+
+    # respond_to do |format|
+    #   if @request.save
+    #     format.html { redirect_to @request, notice: 'Request was successfully created.' }
+    #     format.json { render action: 'show', status: :created, location: @request }
+    #   else
+    #     format.html { render action: 'new' }
+    #     format.json { render json: @request.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT /requests/1
@@ -56,11 +69,14 @@ class RequestsController < ApplicationController
   # DELETE /requests/1
   # DELETE /requests/1.json
   def destroy
+    @event = Event.find(params[:event_id])
+    @request = @event.requests.find(params[:id])
     @request.destroy
-    respond_to do |format|
-      format.html { redirect_to requests_url }
-      format.json { head :no_content }
-    end
+    redirect_to event_path(@event)
+    # respond_to do |format|
+    #   format.html { redirect_to requests_url }
+    #   format.json { head :no_content }
+    # end
   end
 
   private

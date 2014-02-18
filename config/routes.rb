@@ -1,8 +1,19 @@
 Binofparts::Application.routes.draw do
 
-  resources :requests
+  namespace :api do
+    namespace :v1 do
+      devise_scope :user do
+        post "/sign_in", :to => 'session#create'
+        delete "/sign_out", :to => 'session#destroy'
+      end
+    end
+  end
 
   resources :events, only: %w(index show)
+
+  resources :events do
+    resources :requests
+  end
 
   resources :teams, only: %w(index show)
 
