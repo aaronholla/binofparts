@@ -34,11 +34,13 @@
 	<ul class="media-list col-md-6">
 		<% @requests.each do |r| %>
 			<li class="media">
-				<div class="media-body">
+			<%= link_to([r.event, r]) do %>
+			  <div class="media-body">
 					<h3 class="media-heading">Team: <%= r.team_id %></h3>
 					<h4>Part Id: <%= r.part_id %></h4>
 				</div>
 				<div class="right"><a>QTY</a></br></br><a><%=  r.qty %></a></div>
+			<% end %>
 			</li>
 		<% end %>
 	</ul>

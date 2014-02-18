@@ -11,9 +11,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    @requests = @event.requests.first(10)
-    @request = Request.new
-    @request.event_id = @event.id
+    @requests = @event.requests.order('updated_at DESC').limit(10)
   end
 
   private

@@ -1,11 +1,12 @@
 class RequestsController < ApplicationController
   before_filter :authenticate_user!
   before_action :set_request, only: [:show, :edit, :update, :destroy]
+  before_action :set_event, only: [:index]
 
   # GET /requests
   # GET /requests.json
   def index
-    @requests = Request.all
+    @requests = @event.requests.all
   end
 
   # GET /requests/1
@@ -20,9 +21,8 @@ class RequestsController < ApplicationController
 
   # GET /requests/1/edit
   def edit
-    set_request
     unless current_user.team_number_id == @request.team_id
-        redirect_to requests_path, notice: "You cannot edit this request."
+        redirect_to event_requests_path, notice: "You cannot edit this request."
     end 
   end
 
@@ -30,16 +30,11 @@ class RequestsController < ApplicationController
   # POST /requests.json
   def create
     
-    if params.has_key?(:event_id)
-      @event = Event.find(params[:event_id])
+    @event = Event.find(params[:event_id])
 
-      @request = @event.requests.create(request_params)
-      @request.team_id = current_user.team_number_id
-      redirect_to event_path(@event)
-    else
-      @request = Request.new(request_params)
-      @request.team_id = current_user.team_number_id
-    end
+    @request = @event.requests.create(request_params)
+    @request.team_id = current_user.team_number_id
+    redirect_to event_path(@event)
 
     # respond_to do |format|
     #   if @request.save
@@ -80,6 +75,10 @@ class RequestsController < ApplicationController
   end
 
   private
+    def set_event
+      @event = Event.find(params[:event_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_request
       @request = Request.find(params[:id])
