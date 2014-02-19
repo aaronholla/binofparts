@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Prelaunch::Application.load_tasks
+Myapp::Application.load_tasks

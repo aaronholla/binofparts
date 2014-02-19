@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Prelaunch::Application.config.secret_key_base = '4862b791b8bb2cc4cb4ce84363ef4b848fd9fc7dc6a377c995130b11aa2070c37c4405c4ec63cc5472ae9fec0ab9800f902ff6f4d8881933b22e6dbc4b3f912a'
+Myapp::Application.config.secret_key_base = '480f4564140f73b9246107ba9780c24ed99c09561cb50df8ee88cc6da7ce7d2bf7c92a50dd31e9d0675011a0a6cb96ae6b45e4a99d80c0e09ddb5f50a7c2634e'
