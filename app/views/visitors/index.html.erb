@@ -1,0 +1,15 @@
+<%= form_for :send_mail, :url => send_mail_path, :html => {:method => :post} do |f| %>
+	<p>
+	 <b>Your email:</b><br>
+	 <%= f.text_field :email %>
+	</p>
+	<p>
+	 <b>Your Name:</b><br>
+	 <%= f.text_field :first_name %><%= f.text_field :last_name %>
+	</p>
+	<p>
+	 <b>Your Team:</b><br>
+	 <%= f.text_field :team %>
+	</p>
+	 <%= f.submit "Register" %>
+<% end %>
