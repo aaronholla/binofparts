@@ -2,18 +2,66 @@
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <style type="text/css">
+    img{
+      width: 350px;
+    }
+    </style>
   </head>
   <body>
-    <div style="margin: auto;"><%= image_tag("bop-logo-full-black.png") %></div>
-    <p>Hello,</p>
-    <p>
-      You have successfully pre-registered for Bin of Parts. We will be entering into beta soon and will be inviting a select few teams. If you would like to learn more about Bin of Parts or the upcoming beta please read <a href="http://blog.binofparts.com/welcome-to-bin-of-parts/">this post on our blog</a>. Also to stay up to date with all the latest news about Bin of Parts please follow us on twitter <a href="https://twitter.com/binofparts">@Binofparts</a>.
-    </p>
-    <p>
-      SOCIAL LINKS
-    </p>
-    <p>Bin of Parts, Inc.</br>
-    <%= Time.now.strftime("%B %d, %Y") %>
-    </p>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" cellpadding="20" cellspacing="0" width="600" id="emailContainer">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" cellpadding="10" cellspacing="0" width="350" id="emailHeader">
+                                <tr>
+                                    <td align="center" valign="top">
+                                      <%= image_tag attachments['logo.png'].url -%>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" cellpadding="5" cellspacing="0" width="100%" id="emailBody">
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <p>Hello,</p>
+                                        <p>You have successfully pre-registered for Bin of Parts. We will be entering into beta soon and will be inviting a select few teams. If you would like to learn more about Bin of Parts or the upcoming beta please read <a href="http://blog.binofparts.com/welcome-to-bin-of-parts/">this post on our blog</a>. Also to stay up to date with all the latest news about Bin of Parts please follow us on twitter <a href="https://twitter.com/binofparts">@Binofparts</a>.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <table border="0" cellpadding="5" cellspacing="0" width="100%" id="emailFooter">
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <p>Bin of Parts, Inc.</p>
+                                        <p><%= Time.now.strftime("%B %d, %Y") %></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" cellpadding="5" cellspacing="0" width="100%" id="emailFooter">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <p>&copy; <%= Time.now.strftime("%Y") %> Bin of Parts, Inc.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
   </body>
 </html>
