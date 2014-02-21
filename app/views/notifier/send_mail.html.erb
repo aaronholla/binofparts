@@ -4,13 +4,16 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to Bin of Parts team <%= @team %></h1>
+    <div style="margin: auto;"><%= image_tag("bop-logo-full-black.png") %></div>
+    <p>Hello,</p>
     <p>
-      You have successfully Pre-Registered your team for the BinofParts.com Beta.<br>
+      You have successfully pre-registered for Bin of Parts. We will be entering into beta soon and will be inviting a select few teams. If you would like to learn more about Bin of Parts or the upcoming beta please read <a href="http://blog.binofparts.com/welcome-to-bin-of-parts/">this post on our blog</a>. Also to stay up to date with all the latest news about Bin of Parts please follow us on twitter <a href="https://twitter.com/binofparts">@Binofparts</a>.
     </p>
     <p>
-      You will be notified via email with an invitation link when the beta goes live.
+      SOCIAL LINKS
     </p>
-    <p>Thank you and have a great day!</p>
+    <p>Bin of Parts, Inc.</br>
+    <%= Time.now.strftime("%B %d, %Y") %>
+    </p>
   </body>
 </html>
