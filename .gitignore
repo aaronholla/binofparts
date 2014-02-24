@@ -16,3 +16,6 @@
 /tmp
 
 .DS_Store
+
+/config/application.yml
+/ignore
