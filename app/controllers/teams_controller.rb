@@ -5,7 +5,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.order(sort_column + " " + sort_direction)
+    @teams = Team.order(sort_column + " " + sort_direction).paginate(:page => params[:page], :per_page => 30)
   end
 
   # GET /teams/1

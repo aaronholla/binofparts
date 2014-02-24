@@ -38,6 +38,8 @@ group :development do
   gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
 end
 
+gem 'will_paginate', '~> 3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

@@ -1,25 +1,29 @@
 <% content_for :title, "- Teams" %>
-<h1>Listing teams</h1>
+<div class="container">
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th><%= sortable "team_number", "#" %></th>
-      <th><%= sortable "nickname", "Name" %></th>
-      <th><%= sortable "location", "Location" %></th>
-    </tr>
-  </thead>
+  <%= will_paginate @teams %>
 
-  <tbody>
-    <% @teams.each do |team| %>
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= team.team_number %></td>
-        <td><%= team.nickname %></td>
-        <td><%= team.location %></td>
-        <td><%= link_to 'View', team %></td>
+        <th><%= sortable "team_number", "#" %></th>
+        <th><%= sortable "nickname", "Name" %></th>
+        <th><%= sortable "location", "Location" %></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @teams.each do |team| %>
+        <tr>
+          <td><%= team.team_number %></td>
+          <td><%= team.nickname %></td>
+          <td><%= team.location %></td>
+          <td><%= link_to 'View', team %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+</div>
