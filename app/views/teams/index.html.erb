@@ -19,8 +19,8 @@
         <% teams_array.each do |team| %>
           <tr>
             <td><%= link_to team.team_number, team %></td>
-            <td><%= link_to team.nickname, team %></td>
-            <td><%= link_to team.location, team %></td>
+            <td><%= link_to team.nickname.presence || '--', team %></td>
+            <td><%= team.location.presence || '--' %></td>
           </tr>
         <% end %>
       </tbody>
