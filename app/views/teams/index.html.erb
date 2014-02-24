@@ -1,29 +1,33 @@
 <% content_for :title, "- Teams" %>
 <div class="container">
 
+<div class="row">
   <%= will_paginate @teams %>
-
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th><%= sortable "team_number", "#" %></th>
-        <th><%= sortable "nickname", "Name" %></th>
-        <th><%= sortable "location", "Location" %></th>
-        <th></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @teams.each do |team| %>
+</div>
+<div class="row">
+  <% @teams.in_groups_of(30).each do |teams_array| %>
+  <div class="col-xs-12 col-sm-6 col-lg-6">
+    <table class="table table-striped ">
+      <thead>
         <tr>
-          <td><%= team.team_number %></td>
-          <td><%= team.nickname %></td>
-          <td><%= team.location %></td>
-          <td><%= link_to 'View', team %></td>
+          <th><%= sortable "team_number", "#" %></th>
+          <th><%= sortable "nickname", "Name" %></th>
+          <th><%= sortable "location", "Location" %></th>
+          <th></th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
-
-  <br>
+      </thead>
+      <tbody>
+        <% teams_array.each do |team| %>
+          <tr>
+            <td><%= team.team_number %></td>
+            <td><%= team.nickname %></td>
+            <td><%= team.location %></td>
+            <td><%= link_to 'View', team %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <% end %>
+</div>
 </div>
