@@ -7,22 +7,20 @@
 <div class="row">
   <% @teams.in_groups_of(30).each do |teams_array| %>
   <div class="col-xs-12 col-sm-6 col-lg-6">
-    <table class="table table-striped ">
+    <table class="table table-striped table-condensed table-center ">
       <thead>
         <tr>
           <th><%= sortable "team_number", "#" %></th>
           <th><%= sortable "nickname", "Name" %></th>
           <th><%= sortable "location", "Location" %></th>
-          <th></th>
         </tr>
       </thead>
       <tbody>
         <% teams_array.each do |team| %>
           <tr>
-            <td><%= team.team_number %></td>
-            <td><%= team.nickname %></td>
-            <td><%= team.location %></td>
-            <td><%= link_to 'View', team %></td>
+            <td><%= link_to team.team_number, team %></td>
+            <td><%= link_to team.nickname, team %></td>
+            <td><%= link_to team.location, team %></td>
           </tr>
         <% end %>
       </tbody>
