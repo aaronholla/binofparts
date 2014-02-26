@@ -5,12 +5,12 @@ class API::V1::EventsController < API::V1::ApplicationController
 
   # GET /events
   def index
-    respond_with(Event.all, :only => [:id, :key, :name, :short_name, :start_date, :end_date, :official])
+    respond_with(Event.all, :only => [:key, :name, :short_name, :start_date, :end_date, :official])
   end
 
   # GET /events/1
   def show
-    respond_with(@event, :only => [:id, :key, :name, :short_name, :start_date, :end_date, :official])
+    respond_with(@event, :only => [:key, :name, :short_name, :start_date, :end_date, :official])
   end
 
   private
