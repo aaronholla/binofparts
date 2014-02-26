@@ -15,7 +15,7 @@ class API::V1::TeamsController < API::V1::ApplicationController
 
   private
     def set_team
-      @team = Team.find(params[:id])
+      @team = Team.find_by_team_number(params[:id])
     end
 
 end

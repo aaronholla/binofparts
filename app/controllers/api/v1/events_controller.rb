@@ -15,7 +15,7 @@ class API::V1::EventsController < API::V1::ApplicationController
 
   private
     def set_event
-      @event = Event.find(params[:id])
+      @event = Event.find_by_key(params[:id])
     end
 
 end
