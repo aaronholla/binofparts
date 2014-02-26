@@ -1,4 +1,4 @@
-class API::V1::EventsController < API::V1::ApplicationController
+class API::V1::EventsController < API::V1::BaseController
   respond_to :json
   
   before_action :set_event, only: [:show]

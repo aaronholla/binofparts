@@ -5,19 +5,18 @@ class API::V1::RequestsController < API::V1::ApplicationController
   before_action :set_event, only: [:index]
 
   # GET /requests
-  # GET /requests.json
   def index
     respond_with @event.requests.all
   end
 
   # GET /requests/1
-  # GET /requests/1.json
   def show
   end
 
   # GET /requests/new
   def new
     @request = Request.new
+    respond_with = @request
   end
 
   # GET /requests/1/edit
@@ -77,7 +76,7 @@ class API::V1::RequestsController < API::V1::ApplicationController
 
   private
     def set_event
-      @event = Event.find(params[:event_id])
+      @event = Event.find_by_key(params[:event_id])
     end
 
     # Use callbacks to share common setup or constraints between actions.
