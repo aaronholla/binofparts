@@ -1,11 +1,8 @@
 Binofparts::Application.routes.draw do
 
-  namespace :api do
+  namespace :api, :defaults => {:format => :json} do
     namespace :v1 do
-      devise_scope :user do
-        post "/sign_in", :to => 'session#create'
-        delete "/sign_out", :to => 'session#destroy'
-      end
+      resources :events, only: [:index, :show]
     end
   end
 
