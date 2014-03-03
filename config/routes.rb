@@ -2,6 +2,7 @@ Binofparts::Application.routes.draw do
 
   namespace :api, :defaults => {:format => :json} do
     namespace :v1 do
+      resources :sessions, only: [:create, :destroy]
       resources :events, only: [:index, :show] do
         resources :requests
       end
@@ -9,9 +10,7 @@ Binofparts::Application.routes.draw do
     end
   end
 
-  resources :events, only: %w(index show)
-
-  resources :events do
+  resources :events, only: %w(index show) do
     resources :requests
   end
 
@@ -21,16 +20,9 @@ Binofparts::Application.routes.draw do
   get 'about' => 'about#index'
 
   get 'kop' => 'kop#index'
+  get 'kop/:id' => 'kop#show', :as => 'kop_year'
 
   get 'myteam' => 'myteam#index'
-
-  namespace :kop do
-    resources :kop2013, only: %w(index show), path: "/2013"
-    resources :kop2012, only: %w(index show), path: "/2012"
-    resources :kop2011, only: %w(index show), path: "/2011"
-    resources :kop2010, only: %w(index show), path: "/2010"
-    resources :kop2009, only: %w(index show), path: "/2009"
-  end
 
   devise_for :users, :controllers => { :invitations => 'users/invitations' }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.

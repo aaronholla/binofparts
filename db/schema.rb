@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225080450) do
+ActiveRecord::Schema.define(version: 20140303102148) do
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -24,49 +24,16 @@ ActiveRecord::Schema.define(version: 20140225080450) do
     t.boolean  "official"
   end
 
-  create_table "kop2009s", force: true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.string  "number"
-    t.integer "qty"
-    t.string  "category"
-    t.string  "picture"
-  end
-
-  create_table "kop2010s", force: true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.string  "number"
-    t.integer "qty"
-    t.string  "category"
-    t.string  "picture"
-  end
-
-  create_table "kop2011s", force: true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.string  "number"
-    t.integer "qty"
-    t.string  "category"
-    t.string  "picture"
-  end
-
-  create_table "kop2012s", force: true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.string  "number"
-    t.integer "qty"
-    t.string  "category"
-    t.string  "picture"
-  end
-
-  create_table "kop2013s", force: true do |t|
-    t.string  "name"
-    t.string  "description"
-    t.string  "number"
-    t.integer "qty"
-    t.string  "category"
-    t.string  "picture"
+  create_table "parts", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "number"
+    t.integer  "qty"
+    t.string   "category"
+    t.string   "picture"
+    t.string   "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "requests", force: true do |t|

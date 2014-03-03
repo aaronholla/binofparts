@@ -1,9 +1,9 @@
-<% content_for :title, "- 2013 Kit of Parts" %>
+<% content_for :title, "- #{params[:id]} Kit of Parts" %>
 <div class="container">
 	<ul class="media-list col-md-6">
 		<% @first_half.each do |part| %>
 			<li class="media">
-				<div class="left"><div class="imgcenter"></div><%= image_tag(part.picture, class: "media-object") %></div>
+				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{part.year}/#{part.picture}", class: "media-object") %></div>
 				<div class="media-body">
 					<h4 class="media-heading"><%= part.name %></h4>
 				</div>
@@ -14,7 +14,7 @@
 	<ul class="media-list col-md-6">
 		<% @second_half.each do |part| %>
 			<li class="media">
-				<div class="left"><div class="imgcenter"></div><%= image_tag(part.picture, class: "media-object") %></div>
+				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{part.year}/#{part.picture}", class: "media-object") %></div>
 				<div class="media-body">
 					<h4 class="media-heading"><%= part.name %></h4>
 				</div>

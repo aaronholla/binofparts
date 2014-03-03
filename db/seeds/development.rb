@@ -31,7 +31,7 @@ puts "\n2013 Kit of Parts being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2013.json'))
 
 jsonteams.each do |a| 
-  Kop2013.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2013") 
   puts "2013 Part added. #{a['name']}"
 end
 
@@ -43,7 +43,7 @@ puts "\n2012 Kit of Parts being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2012.json'))
 
 jsonteams.each do |a| 
-  Kop2012.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2012") 
   puts "2012 Part added. #{a['name']}"
 end
 
@@ -55,7 +55,7 @@ puts "\n2011 Kit of Parts being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2011.json'))
 
 jsonteams.each do |a| 
-  Kop2011.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2011") 
   puts "2011 Part added. #{a['name']}"
 end
 
@@ -67,7 +67,7 @@ puts "\n2010 Kit of Parts being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2010.json'))
 
 jsonteams.each do |a| 
-  Kop2010.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2010") 
   puts "2010 Part added. #{a['name']}"
 end
 
@@ -79,7 +79,7 @@ puts "\n2009 Kit of Parts being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2009.json'))
 
 jsonteams.each do |a| 
-  Kop2009.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture']) 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2009") 
   puts "2009 Part added. #{a['name']}"
 end
 
