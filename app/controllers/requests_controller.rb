@@ -30,7 +30,7 @@ class RequestsController < ApplicationController
   # POST /requests.json
   def create
     
-    @event = Event.find(params[:event_id])
+    @event = Event.find_by_key(params[:event_id])
 
     @request = @event.requests.create(request_params)
     @request.team_id = current_user.team_number_id
