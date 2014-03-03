@@ -1,23 +1,24 @@
 <% content_for :title, "- Events" %>
-<h1>Listing events</h1>
+<div class="container">
+  <h1><i>FIRST</i> Robotics Competition Events<small> <%= @events.count %> Events</small></h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th><%= sortable "name", "Name" %></th>
-      <th><%= sortable "start_date", "Dates" %></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @events.each do |event| %>
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= link_to event.name, event %></td>
-        <td><%= event.start_date.strftime("%A %B %d") %> to <%= event.end_date.strftime("%A %B %d") %></td>
+        <th><%= sortable "name", "Name" %></th>
+        <th><%= sortable "start_date", "Dates" %></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @events.each do |event| %>
+        <tr>
+          <td><%= link_to event.name, event_path(:id => event.key) %></td>
+          <td><%= event.start_date.strftime("%A %B %d") %> to <%= event.end_date.strftime("%A %B %d") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
