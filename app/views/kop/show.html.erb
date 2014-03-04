@@ -2,8 +2,8 @@
 <div class="container">
 <div class="row">
 	<% @parts.in_groups_of(@half).each do |parts_array| %>
-  <div class="col-xs-12 col-sm-6 col-lg-6" style="margin-top: 20px;">
-    <table class="table table-center ">
+  <div class="col-xs-12 col-md-6">
+    <table class="table table-center" style="margin-top: 20px;">
       <tbody>
         <% parts_array.each do |part| %>
         <% if part.presence %>
