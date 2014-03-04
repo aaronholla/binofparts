@@ -76,7 +76,7 @@ class RequestsController < ApplicationController
 
   private
     def set_event
-      @event = Event.find(params[:event_id])
+      @event = Event.find_by_key(params[:event_id])
     end
 
     # Use callbacks to share common setup or constraints between actions.
@@ -86,6 +86,6 @@ class RequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def request_params
-      params.require(:request).permit(:part_id, :year, :qty, :event_id, :team_id)
+      params.require(:request).permit(:part_id, :qty, :event_id, :team_id)
     end
 end
