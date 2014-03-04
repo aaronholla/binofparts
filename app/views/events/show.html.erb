@@ -28,21 +28,28 @@
 			<% end %>
 		</div>
 	<% end %>
-	<% if @requests.presence %>
-		<ul class="media-list col-md-6">
-			<% @requests.each do |r| %>
-				<li class="media">
-				<%= link_to([r.event, r]) do %>
-				  <div class="media-body">
-						<h3 class="media-heading">Team: <%= r.team_id %></h3>
-						<h4>Part Id: <%= r.part_id %></h4>
-					</div>
-					<div class="right"><a>QTY</a></br></br><a><%=  r.qty %></a></div>
-				<% end %>
-				</li>
-			<% end %>
-		</ul>
-	<% else %>
-		<div style="text-align: center;"><h1><small>No Requests</small></h1></div>
-	<% end %>
+	<div class="col-xs-12 col-sm-6 col-lg-6">
+	<table class="table table-center ">
+      <tbody>
+      	<% if @requests.presence %>
+        <% @requests.each do |request| %>
+          <tr>
+      			<td class="media">
+      				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
+      				<div class="media-body">
+      					<h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.part.qty %></b></small></h4>
+      					<p>Team <%= request.part.description %></p>
+      				</div>
+      				<div class="right"><p>Team <%= request.team.team_number %></p><p>Team <%= request.team.nickname %></p></div>
+      			</td>          
+      		</tr>
+        <% end %>
+   		<% else %>
+			<tr>
+				<td><div style="text-align:center;"><h1><small>No Requests</small></h1></div></td>
+			</tr>
+		<% end %>
+      </tbody>
+    </table>
+    </div>
 </div>
