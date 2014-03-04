@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140304081716) do
+ActiveRecord::Schema.define(version: 20140304162622) do
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20140304081716) do
     t.string   "region"
     t.string   "country_name"
     t.string   "location"
-    t.string   "events",       default: "{}"
+    t.text     "events",       limit: 255, default: "{}"
   end
 
   add_index "teams", ["team_number"], name: "index_teams_on_team_number", unique: true

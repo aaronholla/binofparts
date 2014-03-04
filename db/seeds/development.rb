@@ -19,7 +19,7 @@ puts "\nTeams being added to database...
 jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/teams.json'))
 
 jsonteams.each do |a| 
-  Team.create!(:team_number => a['team_number'], :nickname => a['nickname'], :name => a['name'], :key => a['key'], :website => a['website'], :locality => a['locality'], :region => a['region'], :country_name => a['country_name'], :location => a['location']) 
+  Team.create!(:team_number => a['team_number'], :nickname => a['nickname'], :name => a['name'], :key => a['key'], :website => a['website'], :locality => a['locality'], :region => a['region'], :country_name => a['country_name'], :location => a['location'], :events => a['events']) 
   puts "Team added. #{a['team_number']}"
 end
 
