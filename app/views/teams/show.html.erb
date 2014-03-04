@@ -1,1 +1,12 @@
+<div class="container">
+
+<h1>Team <%= @team.team_number %> - <%= @team.nickname %></h1>
+<p><%= @team.name %></p>
+
+<% @events.each do |event| %>
+      <%=  event.name %>
+<% end %>
+
 <%= link_to 'Back', teams_path %>
+
+</div>

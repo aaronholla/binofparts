@@ -11,6 +11,10 @@ class TeamsController < ApplicationController
   # GET /teams/1
   # GET /teams/1.json
   def show
+    @events = []
+    @team.events.each do |event|
+       @events << Event.find_by_key(event)
+    end
   end
 
   private
