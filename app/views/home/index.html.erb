@@ -1,1 +1,24 @@
-Hello World!
+<div class="container">
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-lg-6">
+	<table class="table table-center ">
+      <tbody>
+        <% @requests.each do |request| %>
+        <% if request.presence %>
+          <tr>
+      			<td class="media">
+      				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
+      				<div class="media-body">
+      					<h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.part.qty %></b></small></h4>
+      					<p>Team <%= request.part.description %></p>
+      				</div>
+      				<div class="right"><p>Team <%= request.team.team_number %></p><p>Team <%= request.team.nickname %></p></div>
+      			</td>          
+      		</tr>
+        <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+</div>
+</div>
