@@ -1,25 +1,27 @@
 <% content_for :title, "- #{params[:id]} Kit of Parts" %>
 <div class="container">
-	<ul class="media-list col-md-6">
-		<% @first_half.each do |part| %>
-			<li class="media">
+<div class="row">
+	<% @parts.in_groups_of(@half).each do |parts_array| %>
+  <div class="col-xs-12 col-sm-6 col-lg-6" style="margin-top: 20px;">
+    <table class="table table-center ">
+      <tbody>
+        <% parts_array.each do |part| %>
+        <% if part.presence %>
+          <tr>
+			<td class="media">
 				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{part.year}/#{part.picture}", class: "media-object") %></div>
 				<div class="media-body">
 					<h4 class="media-heading"><%= part.name %></h4>
 				</div>
 				<div class="right"><a>QTY</a></br></br><a><%=  part.qty %></a></div>
-			</li>
-		<% end %>
-	</ul>
-	<ul class="media-list col-md-6">
-		<% @second_half.each do |part| %>
-			<li class="media">
-				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{part.year}/#{part.picture}", class: "media-object") %></div>
-				<div class="media-body">
-					<h4 class="media-heading"><%= part.name %></h4>
-				</div>
-				<div class="right"><a>QTY</a></br></br><a><%=  part.qty %></a></div>
-			</li>
-		<% end %>
-	</ul>
+			</td>          
+		  </tr>
+        <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <% end %>
+	
+</div>
 </div>

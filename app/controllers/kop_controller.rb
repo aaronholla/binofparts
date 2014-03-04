@@ -1,7 +1,7 @@
 class KopController < ApplicationController
 	before_action :set_year, only: [:show]
 	def show
-		@first_half, @second_half = @parts.in_groups_of(@parts.count / 2)
+		@half = (@parts.count / 2.to_f).ceil
 	end
 
 	private
