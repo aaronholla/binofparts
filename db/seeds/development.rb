@@ -25,41 +25,17 @@ end
 
 puts "All Teams Added."
 
-puts "\n2013 Kit of Parts being added to database...
+puts "\n2009 Kit of Parts being added to database...
 ================================================\n"
 
-jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2013.json'))
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2009.json'))
 
 jsonteams.each do |a| 
-  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2013") 
-  puts "2013 Part added. #{a['name']}"
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2009") 
+  puts "2009 Part added. #{a['name']}"
 end
 
-puts "All 2013 Parts Added."
-
-puts "\n2012 Kit of Parts being added to database...
-================================================\n"
-
-jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2012.json'))
-
-jsonteams.each do |a| 
-  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2012") 
-  puts "2012 Part added. #{a['name']}"
-end
-
-puts "All 2012 Parts Added."
-
-puts "\n2011 Kit of Parts being added to database...
-================================================\n"
-
-jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2011.json'))
-
-jsonteams.each do |a| 
-  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2011") 
-  puts "2011 Part added. #{a['name']}"
-end
-
-puts "All 2011 Parts Added."
+puts "All 2009 Parts Added."
 
 puts "\n2010 Kit of Parts being added to database...
 ================================================\n"
@@ -73,17 +49,47 @@ end
 
 puts "All 2010 Parts Added."
 
-puts "\n2009 Kit of Parts being added to database...
+puts "\n2011 Kit of Parts being added to database...
 ================================================\n"
 
-jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2009.json'))
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2011.json'))
 
 jsonteams.each do |a| 
-  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2009") 
-  puts "2009 Part added. #{a['name']}"
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2011") 
+  puts "2011 Part added. #{a['name']}"
 end
 
-puts "All 2009 Parts Added."
+puts "All 2011 Parts Added."
+
+
+puts "\n2012 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2012.json'))
+
+jsonteams.each do |a| 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2012") 
+  puts "2012 Part added. #{a['name']}"
+end
+
+puts "All 2012 Parts Added."
+
+
+puts "\n2013 Kit of Parts being added to database...
+================================================\n"
+
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2013.json'))
+
+jsonteams.each do |a| 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2013") 
+  puts "2013 Part added. #{a['name']}"
+end
+
+puts "All 2013 Parts Added."
+
+
+
+
 
 def adduser(email, password, first_name, last_name, team_number)
   @user = User.invite!(:email => email, :first_name => first_name, :last_name => last_name, :team_number_id => team_number ) do |u|
