@@ -87,8 +87,17 @@ end
 
 puts "All 2013 Parts Added."
 
+puts "\n2014 Kit of Parts being added to database...
+================================================\n"
 
+jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop2014.json'))
 
+jsonteams.each do |a| 
+  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "2014") 
+  puts "2014 Part added. #{a['name']}"
+end
+
+puts "All 2014 Parts Added."
 
 
 def adduser(email, password, first_name, last_name, team_number)
