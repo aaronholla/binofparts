@@ -2,15 +2,10 @@
 <div class="jumbotron">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 hidden-xs">
+			<div class="col-sm-4 col-sm-offset-2">
 				<%= link_to image_tag("FRCicon.gif", class: "FRCicon"), "http://www.usfirst.org/roboticsprograms/frc", { :target=>"_blank" } %>
 			</div>
-			<div class="col-md-6">
-				<h2>Kickoff 2014</h2>
-				<a role="button" class="btn btn-default btn-block btn-lg disabled" href="">View 2014 Kit of Parts</a>
-				<p>Come back on January 4th, 2014 to view this years Kit of Parts.</p>
-			</div>
-			<div class="col-md-3 tba">
+			<div class="col-sm-4 tba">
 				<i>Team & Event Data Provided By</i>
 				<div class="tba-logo"><%= link_to (image_tag("tba_lamp.png")+"The Blue Alliance").html_safe, "http://thebluealliance.com", { :target=>"_blank"} %></div>
 			</div>
@@ -20,6 +15,7 @@
 <div class="container kop-gamelist">
 	<div class="row">
 	  <div class="col-xs-12 col-sm-6">
+	  	<%= link_to image_tag("2014-Game.jpg", class: "kop-game"), kop_year_path(:id => "2014"), { :class=>"kop-thumb thumbnail" } %>
 	  	<%= link_to image_tag("2013-Game.jpg", class: "kop-game"), kop_year_path(:id => "2013"), { :class=>"kop-thumb thumbnail" } %>
 	  	<%= link_to image_tag("2012-Game.jpg", class: "kop-game"), kop_year_path(:id => "2012"), { :class=>"kop-thumb thumbnail" } %>
 	  </div>
