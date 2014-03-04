@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303102148) do
+ActiveRecord::Schema.define(version: 20140304081716) do
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 20140303102148) do
 
   create_table "requests", force: true do |t|
     t.integer  "part_id"
-    t.integer  "year"
     t.integer  "qty"
     t.integer  "event_id"
     t.integer  "team_id"
@@ -47,6 +46,7 @@ ActiveRecord::Schema.define(version: 20140303102148) do
   end
 
   add_index "requests", ["event_id"], name: "index_requests_on_event_id"
+  add_index "requests", ["part_id"], name: "index_requests_on_part_id"
   add_index "requests", ["team_id"], name: "index_requests_on_team_id"
 
   create_table "teams", force: true do |t|
