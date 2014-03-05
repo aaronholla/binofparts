@@ -1,24 +1,64 @@
 <div class="container">
 <div class="row">
-	<div class="col-xs-12 col-sm-6 col-lg-6">
-	<table class="table table-center ">
+  <div class="col-xs-12 col-sm-5 col-sm-push-7 table-responsive">
+    <table class="table table-condensed table-center">
       <tbody>
-        <% @requests.each do |request| %>
-        <% if request.presence %>
+        <% if @events.blank? %>
           <tr>
-      			<td class="media">
-      				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
-      				<div class="media-body">
-      					<h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.part.qty %></b></small></h4>
-      					<p>Team <%= request.part.description %></p>
-      				</div>
-      				<div class="right"><p>Team <%= request.team.team_number %></p><p>Team <%= request.team.nickname %></p></div>
-      			</td>          
-      		</tr>
-        <% end %>
+            <td><h1><small>No Events.</small></h1></td>          
+          </tr>
+        <% else %>
+          <% @events.each do |event| %>
+            <tr>
+              <td><h3><%= link_to event.name, event_path(event.key) %></h3><p><%= event.start_date.strftime("%A %B %d") %> - <%= event.end_date.strftime("%A %B %d") %></p></td>          
+            </tr>
+          <% end %>
         <% end %>
       </tbody>
     </table>
-    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @myteam.each_with_index do |person, index| %>
+          <tr <% if person.id == current_user.id %>class="success"<% end %> >
+            <td><%= index+1 %></td>
+            <td><%= person.email %></td>
+            <td><%= person.first_name %> <%= person.last_name %><% if person.id == current_user.id %> <span class="label label-success">You</span><% end %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-sm-pull-5 table-responsive">
+  <table class="table">
+    <tbody>
+      <% if @requests.blank? %>
+        <tr>
+          <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
+        </tr>
+      <% else %>
+        <% @requests.each do |request| %>
+          <tr>
+            <td class="media">
+              <div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
+              <div class="media-body">
+                <h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.part.qty %></b></small></h4>
+                <p>Team <%= request.part.description %></p>
+              </div>
+              <div class="right"><p>Team <%= request.team.team_number %></p><p>Team <%= request.team.nickname %></p></div>
+            </td>          
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+  </div>
 </div>
 </div>
