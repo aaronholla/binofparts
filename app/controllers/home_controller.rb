@@ -14,6 +14,14 @@ class HomeController < ApplicationController
 	    @myteam = User.where(:team_number_id => current_user.team_number_id)
 	end
 
+	def update_feed
+		time_ago = Time.now - 8.seconds
+		@requests = Request.where("updated_at > ?", time_ago).order("updated_at DESC")
+		  respond_to do |format|
+		      format.js {render 'update_feed.js.erb'}
+		  end
+	end
+
 	private
     # Use callbacks to share common setup or constraints between actions.
     def set_team
