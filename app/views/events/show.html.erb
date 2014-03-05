@@ -48,7 +48,7 @@
       			<td class="media">
       				<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
       				<div class="media-body">
-      					<h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.part.qty %></b></small></h4>
+      					<h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4>
       					<p>Team <%= request.part.description %></p>
       				</div>
       				<div class="right"><p>Team <%= request.team.team_number %></p><p>Team <%= request.team.nickname %></p></div>
