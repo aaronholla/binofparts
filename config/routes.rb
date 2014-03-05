@@ -17,14 +17,13 @@ Binofparts::Application.routes.draw do
 
   resources :teams, only: %w(index show)
 
-  get 'about' => 'about#index'
-
+  get 'about' => 'about#index'  
   get 'kop' => 'kop#index'
   get 'kop/:id' => 'kop#show', :as => 'kop_year'
 
   get 'myteam' => 'myteam#index'
 
-  devise_for :users, :controllers => { :invitations => 'users/invitations' }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  devise_for :users, :controllers => { :invitations => 'users/invitations', :registrations => "settings" }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -32,6 +31,9 @@ Binofparts::Application.routes.draw do
   authenticated :user do
     devise_scope :user do
       root to: "home#index", :as => "home"
+      get 'settings' => 'devise/registrations#edit', :as => 'edit_user_registration'    
+      patch 'users/:id' => 'devise/registrations#update', :as => 'user_registration' 
+      delete 'users/:id' => 'devise/registrations#destroy', :as => 'delete_user_registration'
     end
   end
   root 'about#index'
