@@ -1,11 +1,14 @@
 class HomeController < ApplicationController
 	before_action :set_team, only: [:index]
 	def index
+	    @event_ids = []
 	    @events = []
-	    @team.events.each do |event|
-	    	@requests = Event.find_by_key(event).requests
+	    @team.events.each_with_index do |event, index|
 	       	@events << Event.find_by_key(event)
+	       	@event_ids << @events[index].id
 	    end
+
+	    @requests = Request.where(:event_id => @event_ids).order("updated_at DESC")
 
 	    @events.sort!{|a,b|a.start_date <=> b.start_date}
 	    @myteam = User.where(:team_number_id => current_user.team_number_id)
