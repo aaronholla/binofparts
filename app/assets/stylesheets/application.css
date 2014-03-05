@@ -25,6 +25,7 @@ html{
 	background: #fff;
 	padding-top: 55px; 
 	margin-bottom: 50px;
+	min-height: 490px;
 }
 .navbar-brand img{
 	margin-right:10px;
@@ -43,6 +44,10 @@ html{
 }
 .bop-navbar .navbar-nav > li > a:hover {
 	color: #1fc200;
+}
+.table-center{
+	table-layout: fixed;
+	text-align: center;
 }
 th .current {
   padding-right: 12px;
