@@ -7,6 +7,7 @@ class HomeController < ApplicationController
 	       	@events << Event.find_by_key(event)
 	    end
 
+	    @events.sort!{|a,b|a.start_date <=> b.start_date}
 	    @myteam = User.where(:team_number_id => current_user.team_number_id)
 	end
 
