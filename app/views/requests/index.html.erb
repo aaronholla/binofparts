@@ -4,18 +4,6 @@
 <h1>Listing requests</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Part</th>
-      <th>Qty</th>
-      <th>Event</th>
-      <th>Team</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @requests.each do |request| %>
       <tr>
@@ -23,9 +11,10 @@
         <td><%= request.qty %></td>
         <td><%= request.event_id %></td>
         <td><%= request.team_id %></td>
-        <td><%= link_to 'Show', [request.event, request] %></td>
-        
-        <td><%= link_to 'Destroy', [request.event, request], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'View', [request.event, request] %></td>
+        <% if user_signed_in? && request.team_id = current_user.team_number_id %>
+          <td><%= link_to 'Delete', [request.event, request], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
