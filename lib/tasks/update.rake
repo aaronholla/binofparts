@@ -1,6 +1,37 @@
 require 'net/http'
 
 namespace :update do
+	# desc "Update parts from the json files."
+	# task :parts, [:year] => [:environment] do |t, args|
+	# 	year = args[:year].to_i
+
+	# 	if year.to_s.size != 4 && year != 0
+	# 		puts "ERROR: Year must be a 4 digit number."
+	# 		next
+	# 	elsif year == 0
+	# 		puts "ERROR: You must provide a year. Format is \"update:parts[year]\""
+	# 		next
+	# 	end
+			
+		
+	# 	jsonteams = ActiveSupport::JSON.decode(File.read('db/seeds/kop#{args[:year]}.json'))
+
+	# 	if jsonteams.presence
+	# 		puts "\n#{args[:year]} Kit of Parts being added to database...
+	# 		================================================\n"
+
+	# 		jsonteams.each do |a| 
+	# 		  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "#{args[:year]}") 
+	# 		  puts "#{args[:year]} Part added. #{a['name']}"
+	# 		end
+
+	# 		puts "All #{args[:year]} Parts Added."
+	# 	else
+	# 		puts "ERROR: No Parts file for that year."
+	# 	end
+		
+
+	# end
 	# desc "Update individual team."
 	# task :team, [:teamnumber] => [:environment] do |t, args|
 
@@ -27,6 +58,29 @@ namespace :update do
 	# 	# end
 
 	# end
+	desc "Update parts from the json files."
+	task :parts => [:environment] do
+		puts "clearing parts table"
+		Part.destroy_all
+		ActiveRecord::Base.connection.execute "UPDATE sqlite_sequence SET seq='0' WHERE name='parts';"
+		(2009..2014).each do |i|
+			jsonteams = ActiveSupport::JSON.decode(File.read("db/seeds/kop#{i}.json"))
+
+			if jsonteams.presence
+				puts "\n#{i} Kit of Parts being added to database...\n
+				================================================\n"
+
+				jsonteams.each do |a| 
+				  Part.create!(:name => a['name'], :description => a['description'], :number => a['number'], :qty => a['qty'], :category => a['category'], :picture => a['picture'], :year => "#{i}") 
+				  puts "#{i} Part added. #{a['name']}"
+				end
+
+				puts "All #{i} Parts Added."
+			else
+				puts "ERROR: Missing Parts file for #{i}."
+			end
+		end
+	end
 	desc "Update all teams."
 	task :teams => [:environment] do
 
