@@ -32,6 +32,8 @@ Binofparts::Application.routes.draw do
     devise_scope :user do
       root to: "home#index", :as => "home"
       get 'home/update_feed' => 'home#update_feed'
+      get '/new_request/set_cat' => 'events#set_cat'
+      get '/new_request/set_part' => 'events#set_part'
       get 'settings' => 'devise/registrations#edit', :as => 'edit_user_registration'    
       patch 'users/:id' => 'devise/registrations#update', :as => 'user_registration' 
       delete 'users/:id' => 'devise/registrations#destroy', :as => 'delete_user_registration'

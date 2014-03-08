@@ -4,7 +4,7 @@
 		"description": "",
 		"number": "am-0912",
 		"qty": "2",
-		"category": "",
+		"category": "motors",
 		"picture": ""
 	},
 	{
@@ -12,7 +12,7 @@
 		"description": "",
 		"number": "AM-0122",
 		"qty": "4",
-		"category": "",
+		"category": "batteries",
 		"picture": ""
 	},
 	{
@@ -20,7 +20,7 @@
 		"description": "",
 		"number": "am-0914",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": ""
 	},
 	{
@@ -28,7 +28,7 @@
 		"description": "auto-reset",
 		"number": "VB3-A20-F57",
 		"qty": "5",
-		"category": "",
+		"category": "electrical",
 		"picture": ""
 	},
 	{

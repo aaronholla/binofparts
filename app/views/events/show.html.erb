@@ -1,7 +1,7 @@
 <div class="container">
 	<% if user_signed_in? %>
 		<div class="new right">
-			<button class="btn btn-success" data-toggle="modal" data-target=".bs-request-modal">New Request</button>
+			<button class="btn btn-success" data-toggle="modal" data-target=".request-modal">New Request</button>
 		</div>
 	<% end %>
 	<h2><%= @event.name %></h2>
@@ -10,30 +10,32 @@
 
 	<%= link_to 'View other Events', events_path %>
 	<% if user_signed_in? %>
-		<div class="modal fade bs-request-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal fade request-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-lg">
 		    <div class="modal-content">
 		    	<div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			    	<h4 class="modal-title">New Part Request</h4>
+			    	<h4 class="modal-title">Select a Category</h4>
 			    </div>
 			    <div class="modal-body">
-			      	<%= form_for([@event, @event.requests.build]) do |f| %>
-					  <div class="field">
-					    <%= f.label :part_id %><br>
-					    <%= f.number_field :part_id %>
-					  </div>
-					  <div class="field">
-					    <%= f.label :qty %><br>
-					    <%= f.number_field :qty %>
-					  </div>
-					  <%= f.hidden_field :team_id, :value => "#{current_user.team_number_id}" %>
-					
-					  <div class="modal-footer">
-					  	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					    <%= f.submit "Submit", :class => "btn btn-primary" %>
-					  </div>
-					<% end %>
+			    	<div class="row" id="categories" data-event-key="<%= @event.key %>">
+			    		<div class="category col-md-4"><a class="thumbnail"><span></span></a></div>
+				    	<div class="category col-md-4"><a class="thumbnail"><span>Motors</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Chassis</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Wires</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Connectors</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Electrical Components</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Nuts & Bolts</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Washers & Spacers</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Wheels</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Game Pieces</span></a></div>
+						<div class="category col-md-4"><a class="thumbnail"><span>Miscellaneous</span></a></div>
+					</div>
+					<div id="parts-list" style="display:none;">
+						<a id="request-list-back"><span>Other Categories</span></a>
+						<ul id="new-request-parts-list">
+						</ul>
+					</div>
 				</div>
 		    </div>
 		  </div>

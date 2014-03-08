@@ -14,6 +14,24 @@ class EventsController < ApplicationController
     @requests = @event.requests.order('updated_at DESC').limit(10)
   end
 
+  def set_cat
+    @event = Event.find_by_key(params[:event])
+    @category = params[:category].downcase
+    @parts = Part.where(:category => @category)
+    respond_to do |format|
+      format.js {render 'set_category.js.erb'}
+    end
+  end
+
+  def set_part
+    @event = Event.find_by_key(params[:event])
+    @part_id = params[:part_id]
+    @part = Part.find(@part_id)
+    respond_to do |format|
+      format.js {render 'set_part.js.erb'}
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_event

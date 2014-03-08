@@ -1,0 +1,13 @@
+//window.alert("I am an alert box!");
+document.getElementById('parts-list').style.display='block';
+document.getElementById('categories').style.display='none';
+
+<% @parts.each do |part| %>
+	s = "<a data-part-id=\"<%= part.id %>\" data-event-key=\"<%= @event.key %>\" class=\"part\"><%= part.name %></a>";
+	li = document.createElement( "li" );
+	li.innerHTML = s;
+
+	$('#new-request-parts-list').append(li);
+<% end %>
+
+
