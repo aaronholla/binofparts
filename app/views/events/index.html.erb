@@ -1,7 +1,29 @@
 <% content_for :title, "- Events" %>
 <div class="container">
+  <h1>Team <%= current_user.team_number_id %><small> <%= @your_events.count %> Events</small></h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Dates</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @your_events.each do |event| %>
+        <tr>
+          <td><%= link_to event.name, event_path(:id => event.key) %></td>
+          <td><%= event.start_date.strftime("%A %B %d") %> to <%= event.end_date.strftime("%A %B %d") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
   <h1><i>FIRST</i> Robotics Competition Events<small> <%= @events.count %> Events</small></h1>
 
+  
   <table class="table">
     <thead>
       <tr>

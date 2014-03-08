@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :set_team_events
   before_action :set_event, only: [:show]
   helper_method :sort_column, :sort_direction
 
@@ -6,6 +7,12 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.order(sort_column + " " + sort_direction)
+    @your_events = []
+    @team_events.each do |event|
+        @your_events << Event.find_by_key(event)
+    end
+
+    @your_events.sort!{|a,b|a.start_date <=> b.start_date}
   end
 
   # GET /events/1
@@ -25,7 +32,7 @@ class EventsController < ApplicationController
 
   def set_part
     @event = Event.find_by_key(params[:event])
-    @part_id = params[:part_id]
+    @part_id = params[:part]
     @part = Part.find(@part_id)
     respond_to do |format|
       format.js {render 'set_part.js.erb'}
@@ -33,6 +40,10 @@ class EventsController < ApplicationController
   end
 
   private
+    # Get all events for the current users team
+    def set_team_events
+      @team_events = Team.find_by_team_number(current_user.team_number_id).events
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_event
       @event = Event.find_by_key(params[:id])
