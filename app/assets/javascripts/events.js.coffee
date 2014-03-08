@@ -31,13 +31,13 @@ ready = ->
     return
 
   $("#new-request-parts-list").on "click", ".part", ->
-  	part_id = $(".part").data('part-id')
-  	event_key = $(".part").data('event-key')
+  	part_id = $(this).data('part-id')
+  	event_key = $("#categories").data('event-key')
   	$.ajax
       url: "/new_request/set_part"
       type: "GET"
       data:
-        part_id: part_id
+        part: part_id
         event: event_key
       dataType: "script"
 
