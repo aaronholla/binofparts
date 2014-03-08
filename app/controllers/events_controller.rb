@@ -7,12 +7,15 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.order(sort_column + " " + sort_direction)
+
+    if user_signed_in?
     @your_events = []
     @team_events.each do |event|
         @your_events << Event.find_by_key(event)
     end
 
     @your_events.sort!{|a,b|a.start_date <=> b.start_date}
+    end
   end
 
   # GET /events/1
@@ -42,7 +45,9 @@ class EventsController < ApplicationController
   private
     # Get all events for the current users team
     def set_team_events
-      @team_events = Team.find_by_team_number(current_user.team_number_id).events
+      if user_signed_in?
+        @team_events = Team.find_by_team_number(current_user.team_number_id).events
+      end
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_event
