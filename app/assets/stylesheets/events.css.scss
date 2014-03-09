@@ -5,6 +5,23 @@
 .new{
 	padding: 35px 25px 0 0;
 }
-#new-request-parts-list li a:hover{
+.category a:hover{
 	cursor: pointer;
+}
+#new-request-parts-list a:hover{
+	cursor: pointer;
+}
+#new-request-parts-list{
+	padding-top: 15px;
+	list-style-type: none;
+}
+#new-request-parts-list img{
+	max-height: 70px;
+}
+#new-request-parts-list .part-div{
+	height: 70px;
+	margin-bottom: 85px; 
+}
+.part .caption{
+	text-align: center;
 }

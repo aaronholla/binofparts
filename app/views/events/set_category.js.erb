@@ -3,8 +3,9 @@ document.getElementById('parts-list').style.display='block';
 document.getElementById('categories').style.display='none';
 
 <% @parts.each do |part| %>
-	s = "<a data-part-id=\"<%= part.id %>\" class=\"part\"><%= part.name %></a>";
-	li = document.createElement( "li" );
+	s = '<a data-part-id="<%= part.id %>" class="part thumbnail"><%= image_tag("kop#{part.year}/#{part.picture}") %><div class="caption"><p><%= part.name %></p></div></a>';
+	li = document.createElement( "div" );
+	li.className = "part-div col-sm-6";
 	li.innerHTML = s;
 
 	$('#new-request-parts-list').append(li);
