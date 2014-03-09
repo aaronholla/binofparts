@@ -11,7 +11,7 @@ Binofparts::Application.routes.draw do
   end
 
   resources :events, only: %w(index show) do
-    resources :requests
+    resources :requests,except: %w(new edit)
   end
 
 
