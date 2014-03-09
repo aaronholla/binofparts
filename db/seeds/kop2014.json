@@ -28,7 +28,7 @@
 		"description": "auto-reset",
 		"number": "VB3-A20-F57",
 		"qty": "5",
-		"category": "electrical",
+		"category": "electrical components",
 		"picture": "2014kop4.jpg"
 	},
 	{
@@ -36,7 +36,7 @@
 		"description": "auto-reset",
 		"number": "VB3-A30-F57",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop5.jpg"
 	},
 	{
@@ -44,7 +44,7 @@
 		"description": "auto-reset",
 		"number": "MX5-A40",
 		"qty": "4",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop6.jpg"
 	},
 	{
@@ -52,7 +52,7 @@
 		"description": "120A, Automotive style",
 		"number": "CB185-120",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop7.jpg"
 	},
 	{
@@ -60,7 +60,7 @@
 		"description": "Includes (1) fan, (1)housing, (4)supports, (3)wrenches, motor interface board, hardware",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop8.jpg"
 	},
 	{
@@ -172,7 +172,7 @@
 		"description": "Series L Spring Life 25000 Cycles",
 		"number": "SL6G25",
 		"qty": "1",
-		"category": "",
+		"category": "springs",
 		"picture": "2014kop22.jpg"
 	},
 	{
@@ -180,7 +180,7 @@
 		"description": "Series H Spring Life 4000 Cycles",
 		"number": "SH6G25",
 		"qty": "1",
-		"category": "",
+		"category": "springs",
 		"picture": "2014kop23.jpg"
 	},
 	{
@@ -188,7 +188,7 @@
 		"description": "Sticker to designate Emergency Stop on Driver Station (space bar)",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "drivers station",
 		"picture": "2014kop24.jpg"
 	},
 	{
@@ -196,7 +196,7 @@
 		"description": "",
 		"number": "70006291140",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2014kop25.jpg"
 	},
 	{
@@ -228,7 +228,7 @@
 		"description": "",
 		"number": "A003266 / am0867",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop29.jpg"
 	},
 	{
@@ -236,7 +236,7 @@
 		"description": "",
 		"number": "A003333 / am-0266",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop30.jpg"
 	},
 	{
@@ -244,7 +244,7 @@
 		"description": "",
 		"number": "JE150399689",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop31.jpg"
 	},
 	{
@@ -252,7 +252,7 @@
 		"description": "Accelerometer p/n - ADXL345 Gyro p/n - ADXRS652BBGZ-RL",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop32.jpg"
 	},
 	{
@@ -260,7 +260,7 @@
 		"description": "UNIRAP, 4\"",
 		"number": "CT18075C",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop33.jpg"
 	},
 	{
@@ -268,7 +268,7 @@
 		"description": "UNIRAP, 8\"",
 		"number": "CT50175C",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop34.jpg"
 	},
 	{
@@ -276,7 +276,7 @@
 		"description": "12/24V to 5V",
 		"number": "CLL25-24S05",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop35.jpg"
 	},
 	{
@@ -284,7 +284,7 @@
 		"description": "0.125\" ID x 0.094\" thickness x 5'L",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop36.jpg"
 	},
 	{
@@ -292,7 +292,7 @@
 		"description": "",
 		"number": "640907-1",
 		"qty": "8",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop37.jpg"
 	},
 	{
@@ -300,7 +300,7 @@
 		"description": "",
 		"number": "170604-1",
 		"qty": "8",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop38.jpg"
 	},
 	{
@@ -308,7 +308,7 @@
 		"description": "12-10ga,.250d",
 		"number": "40521098-2",
 		"qty": "8",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop39.jpg"
 	},
 	{
@@ -316,7 +316,7 @@
 		"description": "#6ga-1/4\" stud, Plasti-Grip",
 		"number": "52042",
 		"qty": "4",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop40.jpg"
 	},
 	{
@@ -324,7 +324,7 @@
 		"description": "Assorted shaft collars and couplers",
 		"number": "Various",
 		"qty": "1",
-		"category": "",
+		"category": "shaft collars",
 		"picture": "2014kop41.jpg"
 	},
 	{
@@ -332,7 +332,7 @@
 		"description": "",
 		"number": "34072",
 		"qty": "10",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop42.jpg"
 	},
 	{
@@ -340,7 +340,7 @@
 		"description": "",
 		"number": "34068",
 		"qty": "10",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop43.jpg"
 	},
 	{
@@ -348,7 +348,7 @@
 		"description": "",
 		"number": "10",
 		"qty": "34067",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop44.jpg"
 	},
 	{
@@ -356,7 +356,7 @@
 		"description": "6-14 ga solderless lug, mechanical",
 		"number": "KPA4CUNPL",
 		"qty": "1",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop45.jpg"
 	},
 	{
@@ -364,7 +364,7 @@
 		"description": "6-14 ga solderless lug, compression",
 		"number": "YAZV6CTC14FX",
 		"qty": "1",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop46.jpg"
 	},
 	{
@@ -372,7 +372,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop47.jpg"
 	},
 	{
@@ -380,7 +380,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop48.jpg"
 	},
 	{
@@ -388,7 +388,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop49.jpg"
 	},
 	{
@@ -396,7 +396,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop50.jpg"
 	},
 	{
@@ -404,7 +404,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop51.jpg"
 	},
 	{
@@ -412,7 +412,7 @@
 		"description": "10' length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop52.jpg"
 	},
 	{
@@ -420,7 +420,7 @@
 		"description": "",
 		"number": "70070521052",
 		"qty": "1",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop53.jpg"
 	},
 	{
@@ -428,7 +428,7 @@
 		"description": "",
 		"number": "80610833834",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2014kop54.jpg"
 	},
 	{
@@ -436,7 +436,7 @@
 		"description": "",
 		"number": "80610833909",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2014kop55.jpg"
 	},
 	{
@@ -444,7 +444,7 @@
 		"description": "",
 		"number": "70006701497",
 		"qty": "1",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop56.jpg"
 	},
 	{
@@ -452,7 +452,7 @@
 		"description": "",
 		"number": "80611472384",
 		"qty": "2",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop57.jpg"
 	},
 	{
@@ -460,7 +460,7 @@
 		"description": "",
 		"number": "80611600893",
 		"qty": "2",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop58.jpg"
 	},
 	{
@@ -468,7 +468,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop59.jpg"
 	},
 	{
@@ -476,7 +476,7 @@
 		"description": "24\"",
 		"number": "N/A",
 		"qty": "5",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop60.jpg"
 	},
 	{
@@ -484,7 +484,7 @@
 		"description": "36\", 22AWG wire, male/female",
 		"number": "N/A",
 		"qty": "8",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop61.jpg"
 	},
 	{
@@ -492,7 +492,7 @@
 		"description": "#6 wire pair, red & black, 12\" tail SB-50A Power Pole Connector",
 		"number": "N/A",
 		"qty": "3",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop62.jpg"
 	},
 	{
@@ -500,7 +500,7 @@
 		"description": "12 Vdc",
 		"number": "412F",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop63.jpg"
 	},
 	{
@@ -508,7 +508,7 @@
 		"description": "12 Vdc",
 		"number": "412",
 		"qty": "3",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop64.jpg"
 	},
 	{
@@ -516,7 +516,7 @@
 		"description": "Length, colors vary",
 		"number": "Varies",
 		"qty": "2",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop65.jpg"
 	},
 	{
@@ -524,7 +524,7 @@
 		"description": "18in. length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop66.jpg"
 	},
 	{
@@ -532,7 +532,7 @@
 		"description": "18in. length",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop67.jpg"
 	},
 	{
@@ -540,7 +540,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop68.jpg"
 	},
 	{
@@ -548,7 +548,7 @@
 		"description": "",
 		"number": "AE235100-0160",
 		"qty": "4",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop69.jpg"
 	},
 	{
@@ -556,7 +556,7 @@
 		"description": "",
 		"number": "various",
 		"qty": "1",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop70.jpg"
 	},
 	{
@@ -564,7 +564,7 @@
 		"description": "",
 		"number": "MNG10-10FBK",
 		"qty": "16",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop71.jpg"
 	},
 	{
@@ -572,7 +572,7 @@
 		"description": "",
 		"number": "MNG10-6RK",
 		"qty": "20",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop72.jpg"
 	},
 	{
@@ -580,7 +580,7 @@
 		"description": "",
 		"number": "MNG14-6R/SK",
 		"qty": "20",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop73.jpg"
 	},
 	{
@@ -588,7 +588,7 @@
 		"description": "",
 		"number": "MNG18-6R/SK",
 		"qty": "20",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop74.jpg"
 	},
 	{
@@ -596,7 +596,7 @@
 		"description": "",
 		"number": "MVI18-250DFK",
 		"qty": "20",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop75.jpg"
 	},
 	{
@@ -604,7 +604,7 @@
 		"description": "",
 		"number": "1ME99",
 		"qty": "2",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop76.jpg"
 	},
 	{
@@ -612,7 +612,7 @@
 		"description": "female, 4 poles",
 		"number": "CTF040BV8-CN",
 		"qty": "2",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop77.jpg"
 	},
 	{
@@ -620,7 +620,7 @@
 		"description": "",
 		"number": "V7-2B17D8-048",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop78.jpg"
 	},
 	{
@@ -628,7 +628,7 @@
 		"description": "",
 		"number": "V7-2A27D84-000-1",
 		"qty": "4",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop79.jpg"
 	},
 	{
@@ -636,7 +636,7 @@
 		"description": "2-pole",
 		"number": "734-102",
 		"qty": "6",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop80.jpg"
 	},
 	{
@@ -644,7 +644,7 @@
 		"description": "CA8",
 		"number": "62381501303",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2014kop81.jpg"
 	},
 	{
@@ -652,7 +652,7 @@
 		"description": "PR100",
 		"number": "6261403507",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2014kop82.jpg"
 	},
 	{
@@ -660,7 +660,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "game pieces",
 		"picture": "2014kop83.jpg"
 	},
 	{
@@ -668,7 +668,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "game pieces",
 		"picture": "2014kop84.jpg"
 	},
 	{
@@ -676,7 +676,7 @@
 		"description": "12 volt, 17.2 Amp-hour, Non-Spillable",
 		"number": "NP18-12B",
 		"qty": "1",
-		"category": "",
+		"category": "batteries",
 		"picture": "2014kop85.jpg"
 	},
 	{
@@ -684,7 +684,7 @@
 		"description": "Male/Female",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "cables",
 		"picture": "2014kop86.jpg"
 	},
 	{
@@ -692,7 +692,7 @@
 		"description": "Plastic bushings, cable carrier, metal guides, rods",
 		"number": "various",
 		"qty": "1",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop87.jpg"
 	},
 	{
@@ -700,7 +700,7 @@
 		"description": "12V Light",
 		"number": "855PB-B12ME522",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop88.jpg"
 	},
 	{
@@ -708,7 +708,7 @@
 		"description": "8 40A outputs, 12 20/32A outputs, 5V, 12V, & 24V regulated outputs",
 		"number": "A003206 / am-0265",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop89.jpg"
 	},
 	{
@@ -716,7 +716,7 @@
 		"description": "",
 		"number": "8830",
 		"qty": "1",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop90.jpg"
 	},
 	{
@@ -724,7 +724,7 @@
 		"description": "48\" x 36\" x 120\" x .004\",gusseted poly bag",
 		"number": "114200",
 		"qty": "2",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop91.jpg"
 	},
 	{
@@ -732,7 +732,7 @@
 		"description": "Plastic, numbered",
 		"number": "9001-16",
 		"qty": "6",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop92.jpg"
 	},
 	{
@@ -740,7 +740,7 @@
 		"description": "D-Link Extreme N Duo Wireless Bridge/Access Point",
 		"number": "DAP-1522",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop93.jpg"
 	},
 	{
@@ -748,7 +748,7 @@
 		"description": "",
 		"number": "217-2000 or PM25R-45F-1004",
 		"qty": "2",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop94.jpg"
 	},
 	{
@@ -756,7 +756,7 @@
 		"description": "",
 		"number": "217-3351",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop95.jpg"
 	},
 	{
@@ -764,7 +764,7 @@
 		"description": "",
 		"number": "217-3371",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop96.jpg"
 	},
 	{
@@ -772,7 +772,7 @@
 		"description": "12V,20A Max",
 		"number": "SPIKE-RELAY-H",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop97.jpg"
 	},
 	{
@@ -780,7 +780,7 @@
 		"description": "",
 		"number": "217-2000 or PM25R-45F-1004",
 		"qty": "2",
-		"category": "",
+		"category": "motors",
 		"picture": "2014kop98.jpg"
 	},
 	{
@@ -796,7 +796,7 @@
 		"description": "",
 		"number": "JE150416673",
 		"qty": "5",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop100.jpg"
 	},
 	{
@@ -804,7 +804,7 @@
 		"description": "",
 		"number": "JE150279733",
 		"qty": "5",
-		"category": "",
+		"category": "connectors",
 		"picture": "2014kop101.jpg"
 	},
 	{
@@ -820,7 +820,7 @@
 		"description": "12 volt, 17.2 Amp-hour, Non-Spillable",
 		"number": "NP18-12B",
 		"qty": "1",
-		"category": "",
+		"category": "batteries",
 		"picture": "2014kop103.jpg"
 	},
 	{
@@ -828,7 +828,7 @@
 		"description": "12V, 6Amp automatic",
 		"number": "SC-600A",
 		"qty": "1",
-		"category": "",
+		"category": "batteries",
 		"picture": "2014kop104.jpg"
 	},
 	{
@@ -836,7 +836,7 @@
 		"description": "2.14\" x 6.5\"",
 		"number": "TW-E40-1020",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop105.jpg"
 	},
 	{
@@ -844,7 +844,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop106.jpg"
 	},
 	{
@@ -852,7 +852,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "2",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop107.jpg"
 	},
 	{
@@ -860,7 +860,7 @@
 		"description": "Clamshell netbook",
 		"number": "NBC2GO89A",
 		"qty": "1",
-		"category": "",
+		"category": "drivers station",
 		"picture": "2014kop108.jpg"
 	},
 	{
@@ -868,7 +868,7 @@
 		"description": "4-slot cRIO with Analog (9201), Digital (9403), and Solenoid (9472) modules",
 		"number": "cRIO-FRC II",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop109.jpg"
 	},
 	{
@@ -876,7 +876,7 @@
 		"description": "Attack 3 and/or Extreme 3D",
 		"number": "963291-0403 or 963290-0403",
 		"qty": "2",
-		"category": "",
+		"category": "drivers station",
 		"picture": "2014kop110.jpg"
 	},
 	{
@@ -884,7 +884,7 @@
 		"description": "",
 		"number": "CY8CKIT-003",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop111.jpg"
 	},
 	{
@@ -892,7 +892,7 @@
 		"description": "",
 		"number": "217-3367",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop112.jpg"
 	},
 	{
@@ -900,7 +900,7 @@
 		"description": "VICTOR-888-12-12",
 		"number": "217-2769",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2014kop113.jpg"
 	},
 	{
@@ -908,7 +908,7 @@
 		"description": "8GB USB drive preloaded w/ 2014 Classmate image",
 		"number": "",
 		"qty": "1",
-		"category": "",
+		"category": "drivers station",
 		"picture": "2014kop114.jpg"
 	},
 	{
@@ -916,7 +916,7 @@
 		"description": "2 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0034",
 		"qty": "4",
-		"category": "",
+		"category": "gears",
 		"picture": "2014kop115.jpg"
 	},
 	{
@@ -924,7 +924,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0176",
 		"qty": "2",
-		"category": "",
+		"category": "gears",
 		"picture": "2014kop116.jpg"
 	},
 	{
@@ -932,7 +932,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0179",
 		"qty": "2",
-		"category": "",
+		"category": "gears",
 		"picture": "2014kop117.jpg"
 	},
 	{
@@ -940,7 +940,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0149",
 		"qty": "2",
-		"category": "",
+		"category": "gears",
 		"picture": "2014kop118.jpg"
 	},
 	{
@@ -948,7 +948,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0028",
 		"qty": "2",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop119.jpg"
 	},
 	{
@@ -956,7 +956,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0279",
 		"qty": "2",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop120.jpg"
 	},
 	{
@@ -964,7 +964,7 @@
 		"description": "2 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0516",
 		"qty": "4",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop121.jpg"
 	},
 	{
@@ -972,7 +972,7 @@
 		"description": "4 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-1120",
 		"qty": "8",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop122.jpg"
 	},
 	{
@@ -980,7 +980,7 @@
 		"description": "2 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-1121",
 		"qty": "4",
-		"category": "",
+		"category": "machine keys",
 		"picture": "2014kop123.jpg"
 	},
 	{
@@ -988,7 +988,7 @@
 		"description": "4 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-1009",
 		"qty": "8",
-		"category": "",
+		"category": "washers & spacers",
 		"picture": "2014kop124.jpg"
 	},
 	{
@@ -996,7 +996,7 @@
 		"description": "2 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0033",
 		"qty": "4",
-		"category": "",
+		"category": "retaining clips",
 		"picture": "2014kop125.jpg"
 	},
 	{
@@ -1004,7 +1004,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0206",
 		"qty": "2",
-		"category": "",
+		"category": "retaining clips",
 		"picture": "2014kop126.jpg"
 	},
 	{
@@ -1012,7 +1012,7 @@
 		"description": "2 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-1042",
 		"qty": "8",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop127.jpg"
 	},
 	{
@@ -1020,7 +1020,7 @@
 		"description": "4 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-1047",
 		"qty": "8",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop128.jpg"
 	},
 	{
@@ -1028,7 +1028,7 @@
 		"description": "4 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0908",
 		"qty": "8",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2014kop129.jpg"
 	},
 	{
@@ -1036,7 +1036,7 @@
 		"description": "1 per TB Mini X 2 TB Mini Kits",
 		"number": "am-2566",
 		"qty": "2",
-		"category": "",
+		"category": "shafts",
 		"picture": "2014kop130.jpg"
 	},
 	{
@@ -1044,7 +1044,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0650",
 		"qty": "2",
-		"category": "",
+		"category": "gearboxes",
 		"picture": "2014kop131.jpg"
 	},
 	{
@@ -1052,7 +1052,7 @@
 		"description": "1 per TB Mini Kit * 2 TB Mini Kits",
 		"number": "am-0152",
 		"qty": "2",
-		"category": "",
+		"category": "shafts",
 		"picture": "2014kop132.jpg"
 	},
 	{
@@ -1060,7 +1060,7 @@
 		"description": "Double Shielded, ID: 0.375\", OD: 1.125\", Width: 0.375\"",
 		"number": "am-0209",
 		"qty": "8",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop133.jpg"
 	},
 	{
@@ -1068,7 +1068,7 @@
 		"description": "Double Shielded, ID: 0.500\", OD: 1.125\", Width: 0.312\"",
 		"number": "am-0279",
 		"qty": "2",
-		"category": "",
+		"category": "bearings",
 		"picture": "2014kop134.jpg"
 	},
 	{
@@ -1076,7 +1076,7 @@
 		"description": "",
 		"number": "am-1310",
 		"qty": "44",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop135.jpg"
 	},
 	{
@@ -1084,7 +1084,7 @@
 		"description": "",
 		"number": "am-1054",
 		"qty": "4",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop136.jpg"
 	},
 	{
@@ -1092,7 +1092,7 @@
 		"description": "",
 		"number": "am-1297",
 		"qty": "4",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop137.jpg"
 	},
 	{
@@ -1100,7 +1100,7 @@
 		"description": "",
 		"number": "am-1306",
 		"qty": "4",
-		"category": "",
+		"category": "washers & spacers",
 		"picture": "2014kop138.jpg"
 	},
 	{
@@ -1108,7 +1108,7 @@
 		"description": "",
 		"number": "am-1305",
 		"qty": "2",
-		"category": "",
+		"category": "washers & spacers",
 		"picture": "2014kop139.jpg"
 	},
 	{
@@ -1116,7 +1116,7 @@
 		"description": "",
 		"number": "am-1307",
 		"qty": "4",
-		"category": "",
+		"category": "washers & spacers",
 		"picture": "2014kop140.jpg"
 	},
 	{
@@ -1124,7 +1124,7 @@
 		"description": "",
 		"number": "am-2234-half",
 		"qty": "16",
-		"category": "",
+		"category": "chains & belts",
 		"picture": "2014kop141.jpg"
 	},
 	{
@@ -1132,7 +1132,7 @@
 		"description": "",
 		"number": "am-1266",
 		"qty": "48",
-		"category": "",
+		"category": "nuts & screws",
 		"picture": "2014kop142.jpg"
 	},
 	{
@@ -1140,7 +1140,7 @@
 		"description": "Static CoF = 1.07",
 		"number": "am-2256",
 		"qty": "6",
-		"category": "",
+		"category": "wheels",
 		"picture": "2014kop143.jpg"
 	},
 	{
@@ -1148,7 +1148,7 @@
 		"description": "",
 		"number": "am-2595",
 		"qty": "2",
-		"category": "",
+		"category": "chassis",
 		"picture": "2014kop144.jpg"
 	},
 	{
@@ -1156,7 +1156,7 @@
 		"description": "",
 		"number": "am-2569",
 		"qty": "16",
-		"category": "",
+		"category": "chassis",
 		"picture": "2014kop145.jpg"
 	},
 	{
@@ -1164,7 +1164,7 @@
 		"description": "",
 		"number": "am-2568",
 		"qty": "2",
-		"category": "",
+		"category": "wheels",
 		"picture": "2014kop146.jpg"
 	},
 	{
@@ -1172,7 +1172,7 @@
 		"description": "",
 		"number": "am-2573",
 		"qty": "2",
-		"category": "",
+		"category": "chassis",
 		"picture": "2014kop147.jpg"
 	},
 	{
@@ -1180,7 +1180,7 @@
 		"description": "",
 		"number": "am-2567",
 		"qty": "2",
-		"category": "",
+		"category": "chassis",
 		"picture": "2014kop148.jpg"
 	},
 	{
@@ -1188,7 +1188,7 @@
 		"description": "",
 		"number": "am-2572",
 		"qty": "2",
-		"category": "",
+		"category": "chassis",
 		"picture": "2014kop149.jpg"
 	},
 	{
@@ -1196,7 +1196,7 @@
 		"description": "",
 		"number": "am-2571",
 		"qty": "4",
-		"category": "",
+		"category": "chains & belts",
 		"picture": "2014kop150.jpg"
 	},
 	{
@@ -1204,7 +1204,7 @@
 		"description": "",
 		"number": "am-2571",
 		"qty": "4",
-		"category": "",
+		"category": "chains & belts",
 		"picture": "2014kop151.jpg"
 	},
 	{
@@ -1212,7 +1212,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "1",
-		"category": "miscellaneous",
+		"category": "",
 		"picture": "2014kop152.jpg"
 	}
 ]
