@@ -30,7 +30,6 @@ html{
 	height: 85px;
 	border:1px solid #D2D2D2;
 	border-radius: 5px;
-	background-color: #FAFAFA;
 }
 .imgcenter {
 	display: inline-block;
@@ -41,7 +40,6 @@ html{
 	float: left;
 	width: 85px;
 	height: 100%;
-	border-right:1px solid #DDDDDD;
 	text-align:center;
 }
 .media .left img{
@@ -57,7 +55,6 @@ html{
 	float: right;
 	width:70px;
 	height: 100%;
-	border-left:1px solid #DDDDDD;
 	text-align: center;
 }
 .right{
