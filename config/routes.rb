@@ -7,6 +7,7 @@ Binofparts::Application.routes.draw do
         resources :requests
       end
       resources :teams, only: [:index, :show]
+      get 'kop/:id' => 'kop#show'
     end
   end
 
