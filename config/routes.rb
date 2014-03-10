@@ -13,6 +13,7 @@ Binofparts::Application.routes.draw do
 
   resources :events, only: %w(index show) do
     resources :requests,except: %w(new edit)
+    post 'requests/:id/accept' => 'requests#accept', :as => 'accept_request'
   end
 
 
