@@ -51,6 +51,9 @@ html{
 .media-body{
 	float: left;
 }
+.media-heading{
+	width: 300px;
+}
 .media .right{
 	float: right;
 	width:70px;
