@@ -74,7 +74,7 @@
               <% if request.accepted %>
               <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
               <% end %>
-              <% if user_signed_in? && @team_events.include?(@event.key) %>
+              <% if user_signed_in? %>
                 <% if request.team_id == current_user.team_number_id && request.accepted == false || current_user.team_number_id.nil? %>
                 <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
                 <% elsif request.accepted == false %>
