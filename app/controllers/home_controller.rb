@@ -3,15 +3,22 @@ class HomeController < ApplicationController
 	def index
 	    @event_ids = []
 	    @events = []
-	    @team.events.each_with_index do |event, index|
-	       	@events << Event.find_by_key(event)
-	       	@event_ids << @events[index].id
-	    end
+	    if current_user.team_number_id.nil?
+		    @events << Event.find()
+		    @requests = Request.find().order("updated_at DESC")
 
-	    @requests = Request.where(:event_id => @event_ids).order("updated_at DESC")
+		    @events.sort!{|a,b|a.start_date <=> b.start_date}
+	    else
+		    @team.events.each_with_index do |event, index|
+		       	@events << Event.find_by_key(event)
+		       	@event_ids << @events[index].id
+		    end
 
-	    @events.sort!{|a,b|a.start_date <=> b.start_date}
-	    @myteam = User.where(:team_number_id => current_user.team_number_id)
+		    @requests = Request.where(:event_id => @event_ids).order("updated_at DESC")
+
+		    @events.sort!{|a,b|a.start_date <=> b.start_date}
+		    @myteam = User.where(:team_number_id => current_user.team_number_id)
+		end
 	end
 
 	def update_feed
@@ -25,7 +32,9 @@ class HomeController < ApplicationController
 	private
     # Use callbacks to share common setup or constraints between actions.
     def set_team
-      @team = Team.find_by_team_number(current_user.team_number_id)
+    	if not current_user.team_number_id.nil?
+    		@team = Team.find_by_team_number(current_user.team_number_id)
+    	end
     end
 
 end
