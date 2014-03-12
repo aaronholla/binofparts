@@ -1,5 +1,5 @@
 <div class="container">
-	<% if user_signed_in? && @team_events.include?(@event.key) %>
+	<% if user_signed_in? && @team_events.include?(@event.key) || current_user.team_number_id.nil? %>
 		<div class="new right">
 			<button class="btn btn-success" data-toggle="modal" data-target=".request-modal">New Request</button>
 		</div>
