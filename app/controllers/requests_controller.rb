@@ -80,6 +80,9 @@ class RequestsController < ApplicationController
     @request = @event.requests.find(params[:id])
     if @request.team_id != current_user.team_number_id && @request.accepted == false
       redirect_to event_path(@event)
+    elsif current_user.team_number_id.nil?
+      @request.destroy
+      redirect_to event_path(@event)
     else
       @request.destroy
       redirect_to event_path(@event)
