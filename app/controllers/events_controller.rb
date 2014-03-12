@@ -21,7 +21,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
-    @requests = @event.requests.order('updated_at DESC').limit(10)
+    @requests = @event.requests.order('updated_at DESC')
   end
 
   def set_cat

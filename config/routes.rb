@@ -4,10 +4,14 @@ Binofparts::Application.routes.draw do
     namespace :v1 do
       resources :sessions, only: [:create, :destroy]
       resources :events, only: [:index, :show] do
-        resources :requests
+        resources :requests, except: [:show]
+        get 'requests/:id' => 'requests#team'
+        get 'requests/update_feed' => 'requests#update_feed'
+        post 'requests/:id/accept' => 'requests#accept'
       end
       resources :teams, only: [:index, :show]
       get 'kop/:id' => 'kop#show'
+      get 'parts/:id' => 'parts#category'
     end
   end
 

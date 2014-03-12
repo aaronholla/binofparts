@@ -58,6 +58,24 @@ namespace :update do
 	# 	# end
 
 	# end
+	desc "Update the test users."
+	task :users => [:environment] do
+		def adduser(email, password, first_name, last_name, team_number)
+		  @user = User.invite!(:email => email, :first_name => first_name, :last_name => last_name, :team_number_id => team_number ) do |u|
+		    u.skip_invitation = true
+		  end
+		  token = Devise::VERSION >= "3.1.0" ? @user.instance_variable_get(:@raw_invitation_token) : @user.invitation_token
+		  User.accept_invitation!(:invitation_token => token, :password => password, :password_confirmation => password, :first_name => first_name, :last_name => last_name, :team_number_id => team_number )
+
+		  puts "Created User\n Email: #{email}\n Password: #{password}\n Name: #{first_name} #{last_name} \n Team: #{team_number} \n"
+		  @user
+		end
+
+		puts "\nCreating Test Users...\n
+		================================================\n"
+
+		user1 = adduser("admin@example.com", "password", "test", "admin", "")
+	end
 	desc "Update parts from the json files."
 	task :parts => [:environment] do
 		puts "clearing parts table"
