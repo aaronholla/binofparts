@@ -27,7 +27,8 @@ Binofparts::Application.configure do
   config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
+  config.assets.precompile =  ['*.js'] 
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -64,12 +65,17 @@ Binofparts::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.default_url_options = { :host => 'binofparts.com' }
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     :address   => "smtp.mandrillapp.com",
-    :port      => 587,
-    :user_name => "aaronholla@gmail.com",
-    :password  => "3E_piPzf1L1Ygo2t28yyIg"
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "info@binofparts.com",
+    :password  => "A3tWoVUotL_L3wUEi8qTig", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'binofparts.com', # your domain to identify your server when connecting
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
