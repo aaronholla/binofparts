@@ -3,7 +3,7 @@ document.getElementById("new-request-parts-list").innerHTML = "";
 document.getElementById('request-list-back').style.display='none';
 
 
-s = '<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{@part.year}/#{@part.picture}", class: "media-object") %></div><%= @part.name %><%= form_for([@event, @event.requests.build]) do |f| %><%= f.hidden_field :part_id, :value => "#{@part_id}" %><%= f.number_field :qty, :value => "1" %><%= f.hidden_field :team_id, :value => "#{current_user.team_number_id}" %><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button><%= f.submit "Submit", :class => "btn btn-primary" %></div><% end %>';
+s = '<div class="left"><div class="imgcenter"></div><%= image_tag("kop#{@part.year}/#{@part.picture}", class: "media-object") %></div><%= @part.name %><%= form_for([@event, @event.requests.build]) do |f| %><%= f.hidden_field :part_id, :value => "#{@part_id}" %><%= f.number_field :qty, :value => "1" %><% if request.current_user.team_number_id.nil? %><h3>Team</h3><%= f.number_field :team_id, :value => "#{current_user.team_number_id}" %><% else %><%= f.hidden_field :team_id, :value => "#{current_user.team_number_id}" %><% end %><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button><%= f.submit "Submit", :class => "btn btn-primary" %></div><% end %>';
 
 div = document.createElement( "div" );
 div.innerHTML = s;

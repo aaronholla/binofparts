@@ -54,8 +54,8 @@
                 <div class="left"><span class="label label-primary">Team <%= request.team.team_number %></span></div>
               </div>
               <% if request.accepted %>
-              <div class="right"><p>Accepted By</p><span class="label label-success">Team <%= request.accepted_by %></span></div>
-              <% elsif request.team_id == current_user.team_number_id %>
+              <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
+              <% elsif request.team_id == current_user.team_number_id || current_user.team_number_id.nil? %>
               <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
               <% elsif request.accepted == false %>
               <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>
