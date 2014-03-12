@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 	    @event_ids = []
 	    @events = []
 	    if current_user.team_number_id.nil?
-		    @events << Event.all
+		    @events = Event.all
 		    @requests = Request.all.order("updated_at DESC")
 
 		    @events.sort!{|a,b|a.start_date <=> b.start_date}
