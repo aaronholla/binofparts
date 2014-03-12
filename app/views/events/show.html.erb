@@ -1,8 +1,14 @@
 <div class="container">
-	<% if user_signed_in? && @team_events.include?(@event.key) || current_user.team_number_id.nil? %>
+	<% if user_signed_in?  %>
+		<% if current_user.team_number_id.nil? %>
 		<div class="new right">
 			<button class="btn btn-success" data-toggle="modal" data-target=".request-modal">New Request</button>
 		</div>
+		<% elsif @team_events.include?(@event.key) %>
+		<div class="new right">
+			<button class="btn btn-success" data-toggle="modal" data-target=".request-modal">New Request</button>
+		</div>
+		<% end %>
 	<% end %>
 	<h2><%= @event.name %></h2>
 	<%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %>
