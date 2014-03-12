@@ -8,13 +8,13 @@ class EventsController < ApplicationController
   def index
     @events = Event.order(sort_column + " " + sort_direction)
 
-    if user_signed_in?
-    @your_events = []
-    @team_events.each do |event|
-        @your_events << Event.find_by_key(event)
-    end
+    if user_signed_in? && current_user.team_number_id.presence
+      @your_events = []
+      @team_events.each do |event|
+          @your_events << Event.find_by_key(event)
+      end
 
-    @your_events.sort!{|a,b|a.start_date <=> b.start_date}
+      @your_events.sort!{|a,b|a.start_date <=> b.start_date}
     end
   end
 
@@ -45,7 +45,7 @@ class EventsController < ApplicationController
   private
     # Get all events for the current users team
     def set_team_events
-      if user_signed_in?
+      if user_signed_in? && current_user.team_number_id.presence
         @team_events = Team.find_by_team_number(current_user.team_number_id).events
       end
     end
