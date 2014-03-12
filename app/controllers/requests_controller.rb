@@ -78,7 +78,7 @@ class RequestsController < ApplicationController
   def destroy
     @event = Event.find(params[:event_id])
     @request = @event.requests.find(params[:id])
-    if @request.team_id != current_user.team_number_id && @request.accepted == false
+    if @request.team_id != current_user.team_number_id && @request.accepted == false && current_user.team_number_id.presence
       redirect_to event_path(@event)
     elsif current_user.team_number_id.nil?
       @request.destroy
