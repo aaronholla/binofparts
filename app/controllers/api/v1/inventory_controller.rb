@@ -11,13 +11,15 @@ class API::V1::InventoriesController < API::V1::ApplicationController
   end
 
   def new
-    @event.requests.create(:accepted => true,:accepted_at=>Time.now, :accepted_by => current_user.team_number_id, :part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id], :team_id=> params[:team_id])
     @inventory = @event.inventories.find(params[:inventory_id]) 
     if @inventory.qty != 0 
+      @event.requests.create(:accepted => true,:accepted_at=>Time.now, :accepted_by => current_user.team_number_id, :part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id], :team_id=> params[:team_id])
       @inventory.qty = @inventory.qty - params[:qty].to_f
       @inventory.save
+      render :status=>200, :json=>{:message=>"Success"}
+    else
+    render :status=>200, :json=>{:message=>"Nothing added."}
     end
-    render :status=>200, :json=>{:message=>"Success"}
   end
 
   # POST /requests
