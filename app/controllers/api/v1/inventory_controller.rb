@@ -26,14 +26,9 @@ class API::V1::InventoriesController < API::V1::ApplicationController
 
   # DELETE /requests/1
   def destroy
-    @event = Event.find(params[:event_id])
+    @event = Event.find_by_key(params[:event_id])
     @inventory = @event.inventories.find(params[:id])
     @inventory.destroy
-    redirect_to event_path(@event)
-    # respond_to do |format|
-    #   format.html { redirect_to requests_url }
-    #   format.json { head :no_content }
-    # end
   end
 
   private
