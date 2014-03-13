@@ -12,7 +12,7 @@ class API::V1::InventoriesController < API::V1::ApplicationController
 
   def new
     @event.requests.create(:accepted => true,:accepted_at=>Time.now, :accepted_by => current_user.team_number_id, :part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id], :team_id=> params[:team_id])
-    @inventory = @event.inventories.find(params[:id]) 
+    @inventory = @event.inventories.find(params[:inventory_id]) 
     @inventory.qty = @inventory.qty - params[:qty]
     @inventory.save
     render :status=>200, :json=>{:message=>"Success"}
