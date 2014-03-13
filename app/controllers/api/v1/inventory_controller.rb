@@ -29,6 +29,7 @@ class API::V1::InventoriesController < API::V1::ApplicationController
     @event = Event.find_by_key(params[:event_id])
     @inventory = @event.inventories.find(params[:id])
     @inventory.destroy
+    render :status=>200, :json=>{:message=>"Success"}
   end
 
   private
