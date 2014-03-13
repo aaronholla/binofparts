@@ -8,6 +8,7 @@ Binofparts::Application.routes.draw do
         get 'requests/:id' => 'requests#team'
         get 'requests/update_feed' => 'requests#update_feed'
         post 'requests/:id/accept' => 'requests#accept'
+        resources :inventories, only: [:index, :create, :destroy]
       end
       resources :teams, only: [:index, :show]
       get 'kop/:id' => 'kop#show'

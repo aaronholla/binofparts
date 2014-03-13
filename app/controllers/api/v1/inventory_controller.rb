@@ -1,0 +1,39 @@
+class API::V1::InventoryController < API::V1::ApplicationController
+  respond_to :json
+  
+  before_action :set_event, only: [:index, :team, :create]
+
+  # GET /requests
+  def index
+    respond_with(@event.inventory.all.order("updated_at DESC"),:except => [:part_id],:include => {
+          :part => {:only => [:name, :description, :picture, :year]}
+        })
+  end
+
+  # POST /requests
+  def create 
+    @event.inventory.create(:part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id])
+    render :status=>200, :json=>{:message=>"Success"}
+  end
+
+  # DELETE /requests/1
+  def destroy
+    @event = Event.find(params[:event_id])
+    @inventory = @event.inventory.find(params[:id])
+    @inventory.destroy
+    redirect_to event_path(@event)
+    # respond_to do |format|
+    #   format.html { redirect_to requests_url }
+    #   format.json { head :no_content }
+    # end
+  end
+
+  private
+    def set_event
+      @event = Event.find_by_key(params[:event_id])
+      if @event.nil?
+        render :status=>404, :json=>{:error=>"Event does not exist."}
+      end
+    end
+  
+end
