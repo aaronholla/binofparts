@@ -40,8 +40,12 @@
   <div class="col-xs-12 col-md-6 col-md-pull-5 table-responsive">
   <table class="table">
     <tbody id="live-feed">
+    <% if @request.blank? %>
+      <tr>
+        <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
+      </tr>
+    <% else %>
       <% @requests.each do |request| %>
-       <% if request.presence %>
         <tr>
           <td class="media">
             <div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
@@ -59,12 +63,8 @@
             <% end %>
           </td>          
         </tr>
-        <% else %>
-        <tr>
-          <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
-        </tr>
-        <% end %>
       <% end %>
+    <% end %>
     </tbody>
   </table>
   </div>
