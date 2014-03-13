@@ -6,14 +6,14 @@ class API::V1::RequestsController < API::V1::ApplicationController
 
   # GET /requests
   def index
-    respond_with(@event.requests.all.order("updated_at DESC"),:except => [:part_id],:include => {
+    respond_with(@event.requests.all,:except => [:part_id],:include => {
           :part => {:only => [:name, :description, :picture, :year]}
         })
   end
 
   def update_feed
     time_ago = Time.now - 15.seconds
-    respond_with(@event.requests.where("updated_at >", time_ago).order("updated_at DESC"),:except => [:part_id],:include => {
+    respond_with(@event.requests.where("updated_at > ? ", time_ago).order("updated_at DESC"),:except => [:part_id],:include => {
           :part => {:only => [:name, :description, :picture, :year]}
         })
   end
