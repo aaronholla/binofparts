@@ -124,7 +124,7 @@
 		"description": "black injection molded plastic 6 tooth",
 		"number": "Denso-6",
 		"qty": "2",
-		"category": "",
+		"category": "motors",
 		"picture": "2013kop16.jpg"
 	},
 	{
@@ -180,7 +180,7 @@
 		"description": "",
 		"number": "80-6100-7608-7",
 		"qty": "1",
-		"category": "",
+		"category": "miscellaneous",
 		"picture": "2013kop23.jpg"
 	},
 	{
@@ -556,7 +556,7 @@
 		"description": "Used with terminals to connect to window motors",
 		"number": "12129487",
 		"qty": "4",
-		"category": "",
+		"category": "connectors",
 		"picture": "2013kop70.jpg"
 	},
 	{
@@ -612,7 +612,7 @@
 		"description": "Used with connector housing to connect to window motors",
 		"number": "12110845",
 		"qty": "8",
-		"category": "",
+		"category": "connectors",
 		"picture": "2013kop77.jpg"
 	},
 	{
@@ -724,7 +724,7 @@
 		"description": "42 oz./in. peak torque 0.19 sec./60¡",
 		"number": "HS-322HD",
 		"qty": "2",
-		"category": "",
+		"category": "motors",
 		"picture": "2013kop91.jpg"
 	},
 	{

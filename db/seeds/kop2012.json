@@ -388,7 +388,7 @@
 		"description": "12 pole w/ wire protector",
 		"number": "BM-M092CS",
 		"qty": "2",
-		"category": "",
+		"category": "connectors",
 		"picture": "2012kop49.jpg"
 	},
 	{
@@ -492,7 +492,7 @@
 		"description": "",
 		"number": "31D1-16400",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2012kop62.jpg"
 	},
 	{
@@ -588,7 +588,7 @@
 		"description": "",
 		"number": "ESR-357",
 		"qty": "1",
-		"category": "",
+		"category": "batteries",
 		"picture": "2012kop74.jpg"
 	},
 	{
@@ -628,7 +628,7 @@
 		"description": "roll, 1/4\"\" x 520'",
 		"number": "",
 		"qty": "1",
-		"category": "",
+		"category": "adhesives",
 		"picture": "2012kop79.jpg"
 	},
 	{
@@ -644,7 +644,7 @@
 		"description": "3 wire, red/white/blue, 12Ó",
 		"number": "276-2395-001",
 		"qty": "1",
-		"category": "",
+		"category": "cables",
 		"picture": "2012kop81.jpg"
 	},
 	{
@@ -652,7 +652,7 @@
 		"description": "2 Wire Motor 393",
 		"number": "276-2177",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": "2012kop82.jpg"
 	},
 	{
@@ -660,7 +660,7 @@
 		"description": "VEX Motor Controller 29",
 		"number": "276-2193",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2012kop83.jpg"
 	},
 	{
@@ -684,7 +684,7 @@
 		"description": "",
 		"number": "LV-MaxSonar-EZ1",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2012kop86.jpg"
 	},
 	{
@@ -708,7 +708,7 @@
 		"description": "",
 		"number": "101-3002-1",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop89.jpg"
 	},
 	{
@@ -716,7 +716,7 @@
 		"description": "Mounting bracket",
 		"number": "13536",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop90.jpg"
 	},
 	{
@@ -724,7 +724,7 @@
 		"description": "Opens 115psi, Closes 95psi",
 		"number": "SM-2B-115R/443",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop91.jpg"
 	},
 	{
@@ -732,7 +732,7 @@
 		"description": "Bracket and Nut",
 		"number": "18-025-003",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop92.jpg"
 	},
 	{
@@ -740,7 +740,7 @@
 		"description": "",
 		"number": "R07-100-RNEA",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop93.jpg"
 	},
 	{
@@ -748,7 +748,7 @@
 		"description": "1/8\"\" NPT, 0 - 160 psi",
 		"number": "18-013-212",
 		"qty": "2",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop94.jpg"
 	},
 	{
@@ -756,7 +756,7 @@
 		"description": "120 psi relief valve",
 		"number": "16-004-011",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop95.jpg"
 	},
 	{
@@ -764,7 +764,7 @@
 		"description": "Assorted t-fittings, flow control, and 90Õs",
 		"number": "various",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop96.jpg"
 	},
 	{
@@ -772,7 +772,7 @@
 		"description": "black, injection molded plastic, 6 tooth",
 		"number": "Denso-6",
 		"qty": "4",
-		"category": "",
+		"category": "motors",
 		"picture": "2012kop97.jpg"
 	},
 	{
@@ -796,7 +796,7 @@
 		"description": "24Ó",
 		"number": "N/A",
 		"qty": "5",
-		"category": "",
+		"category": "connectors",
 		"picture": "2012kop100.jpg"
 	},
 	{
@@ -1036,7 +1036,7 @@
 		"description": "",
 		"number": "N/A",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2012kop130.jpg"
 	},
 	{
@@ -1044,7 +1044,7 @@
 		"description": "206 color camera, MJPEG, 16MB RAM, 4MB Flash, 4mm lens, F2.0",
 		"number": "288635",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2012kop131.jpg"
 	},
 	{
@@ -1068,7 +1068,7 @@
 		"description": "24V DC solenoid double valve",
 		"number": "VUVG-L10-B52-T-M5",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop134.jpg"
 	},
 	{
@@ -1132,7 +1132,7 @@
 		"description": "",
 		"number": "A003265 / am-0868",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2012kop142.jpg"
 	},
 	{
@@ -1164,7 +1164,7 @@
 		"description": "For use with Festo Valve push/pull fitting, M7 thread",
 		"number": "183740",
 		"qty": "3",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop146.jpg"
 	},
 	{
@@ -1172,7 +1172,7 @@
 		"description": "For use with Festo Valve 0.5 meter, red & black",
 		"number": "566654",
 		"qty": "2",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop147.jpg"
 	},
 	{
@@ -1180,7 +1180,7 @@
 		"description": "For use with Festo Valve 24v coil",
 		"number": "566716",
 		"qty": "2",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop148.jpg"
 	},
 	{

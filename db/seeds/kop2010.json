@@ -420,7 +420,7 @@
 		"description": "",
 		"number": "AAP2T51Z11",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2010kop53.jpg"
 	},
 	{
@@ -524,7 +524,7 @@
 		"description": "6-14 ga solderless lug  mechanical",
 		"number": "KPA4CUNPL",
 		"qty": "1",
-		"category": "",
+		"category": "connectors",
 		"picture": "2010kop66.jpg"
 	},
 	{
@@ -532,7 +532,7 @@
 		"description": "6-14 ga solderless lug  compression  copper",
 		"number": "YAZV6CTC14FX",
 		"qty": "1",
-		"category": "",
+		"category": "connectors",
 		"picture": "2010kop67.jpg"
 	},
 	{
@@ -1484,7 +1484,7 @@
 		"description": "",
 		"number": "PKT12326",
 		"qty": "1",
-		"category": "",
+		"category": "pnuematics",
 		"picture": "2010kop186.jpg"
 	},
 	{
