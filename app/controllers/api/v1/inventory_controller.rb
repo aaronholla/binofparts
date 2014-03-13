@@ -1,7 +1,7 @@
 class API::V1::InventoriesController < API::V1::ApplicationController
   respond_to :json
   
-  before_action :set_event, only: [:index, :team, :create]
+  before_action :set_event, only: [:index, :new, :team, :create]
 
   # GET /requests
   def index
