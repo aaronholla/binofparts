@@ -1,4 +1,4 @@
-class API::V1::InventoryController < API::V1::ApplicationController
+class API::V1::InventoriesController < API::V1::ApplicationController
   respond_to :json
   
   before_action :set_event, only: [:index, :team, :create]
