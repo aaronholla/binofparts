@@ -5,21 +5,21 @@ class API::V1::InventoriesController < API::V1::ApplicationController
 
   # GET /requests
   def index
-    respond_with(@event.inventory.all.order("updated_at DESC"),:except => [:part_id],:include => {
+    respond_with(@event.inventories.all.order("updated_at DESC"),:except => [:part_id],:include => {
           :part => {:only => [:name, :description, :picture, :year]}
         })
   end
 
   # POST /requests
   def create 
-    @event.inventory.create(:part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id])
+    @event.inventories.create(:part_id=> params[:part_id], :qty=> params[:qty], :event_id=> params[:event_id])
     render :status=>200, :json=>{:message=>"Success"}
   end
 
   # DELETE /requests/1
   def destroy
     @event = Event.find(params[:event_id])
-    @inventory = @event.inventory.find(params[:id])
+    @inventory = @event.inventories.find(params[:id])
     @inventory.destroy
     redirect_to event_path(@event)
     # respond_to do |format|
