@@ -47,7 +47,7 @@
             <div class="media-body">
               <div><h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4></div>
               <div><p><%= request.part.description %></p></div>
-              <div class="left"><span class="label label-primary">Team <%= request.team.team_number_id %></span></div>
+              <div class="left"><span class="label label-primary">Team <%= request.team_id %></span></div>
             </div>
             <% if request.accepted %>
             <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
