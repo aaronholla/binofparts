@@ -1356,7 +1356,7 @@
 		"description": "8 analog inputs ±10 V input range 500 kS/s aggregate sampling rate 12-bit resolution",
 		"number": "9201",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2011kop170.jpg"
 	},
 	{
@@ -1364,7 +1364,7 @@
 		"description": "",
 		"number": "cRIO-FRC",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2011kop171.jpg"
 	},
 	{
@@ -1372,7 +1372,7 @@
 		"description": "32-channel digital I/O 5 V/TTL sinking/sourcing digital I/O 1000 Vrms transient isolation ±30 V",
 		"number": "9403",
 		"qty": "2",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2011kop172.jpg"
 	},
 	{
@@ -1380,7 +1380,7 @@
 		"description": "8-channel 100 _s digital output 6 to 30 V range sourcing digital output",
 		"number": "9472",
 		"qty": "1",
-		"category": "",
+		"category": "electrical components",
 		"picture": "2011kop173.jpg"
 	},
 	{

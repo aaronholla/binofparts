@@ -780,7 +780,7 @@
 		"description": "",
 		"number": "217-2000 or PM25R-45F-1004",
 		"qty": "2",
-		"category": "motors",
+		"category": "",
 		"picture": "2014kop98.jpg"
 	},
 	{
@@ -1230,5 +1230,37 @@
 		"qty": "1",
 		"category": "electrical components",
 		"picture": "2014kop154.jpg"
+	},
+	{
+		"name": "M7-RS775 BaneBots Motors",
+		"description": "",
+		"number": "N/A",
+		"qty": "1",
+		"category": "motors",
+		"picture": "2014kop155.jpg"
+	},
+	{
+		"name": "M7-RS395 BaneBots Motors",
+		"description": "",
+		"number": "N/A",
+		"qty": "1",
+		"category": "motors",
+		"picture": "2014kop156.jpg"
+	},
+	{
+		"name": "Motor For PG27 Gearbox",
+		"description": "RS775-125 Motor",
+		"number": "am-2194",
+		"qty": "1",
+		"category": "motors",
+		"picture": "2014kop157.jpg"
+	},
+	{
+		"name": "AndyMark 9015 Motor",
+		"description": "CCL 9015 motor, and is a \"RS-500 series\" DC motor",
+		"number": "am-0912",
+		"qty": "1",
+		"category": "motors",
+		"picture": "2014kop158.jpg"
 	}
 ]

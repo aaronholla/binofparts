@@ -508,7 +508,7 @@
 		"description": "Volume tank, 2\"\" bore by 12\"\" long",
 		"number": "AVT-32-32",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop64.jpg"
 	},
 	{
@@ -556,7 +556,7 @@
 		"description": "12V DC",
 		"number": "262100-3030",
 		"qty": "1",
-		"category": "",
+		"category": "motors",
 		"picture": "2012kop70.jpg"
 	},
 	{
@@ -1148,7 +1148,7 @@
 		"description": "90C Compressor",
 		"number": "90",
 		"qty": "1",
-		"category": "",
+		"category": "pneumatics",
 		"picture": "2012kop144.jpg"
 	},
 	{
