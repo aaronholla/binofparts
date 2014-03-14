@@ -5,7 +5,7 @@
       <tbody>
         <% if current_user.team_number_id.nil? %>
             <tr>
-              <td><h3><%= link_to @event.name, @event_path(@event.key) %></h3><p><%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %></p></td>          
+              <td><h3><%= link_to @event.name, @event_path %></h3><p><%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %></p></td>          
             </tr>
         <% else %>
           <% @events.each do |event| %>
