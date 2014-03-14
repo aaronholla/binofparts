@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 	    @events = []
 	    if current_user.team_number_id.nil?
 		    @event = Event.find_by_key("2014flor")
-		    @requests = @event.requests.all.order("updated_at DESC")
+		    @requests = @event.requests.where(:event_id => @event.id).order("updated_at DESC")
 
 		    # @events.sort!{|a,b|a.start_date <=> b.start_date}
 		    @myteam = User.where(:team_number_id => current_user.team_number_id)
