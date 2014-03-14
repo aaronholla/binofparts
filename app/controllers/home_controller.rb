@@ -4,10 +4,10 @@ class HomeController < ApplicationController
 	    @event_ids = []
 	    @events = []
 	    if current_user.team_number_id.nil?
-		    @events = Event.all
-		    @requests = Request.all.order("updated_at DESC")
+		    @event = Event.find_by_key("2014flor")
+		    @requests = @event.requests.all.order("updated_at DESC")
 
-		    @events.sort!{|a,b|a.start_date <=> b.start_date}
+		    # @events.sort!{|a,b|a.start_date <=> b.start_date}
 		    @myteam = User.where(:team_number_id => current_user.team_number_id)
 	    else
 		    @team.events.each_with_index do |event, index|
