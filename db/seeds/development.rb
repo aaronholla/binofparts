@@ -114,8 +114,10 @@ end
 puts "\nCreating Test Users...
 ================================================\n"
 
-user1 = adduser("user@example.com", "password", "test", "user", "1612")
-user1 = adduser("user2@example.com", "password", "Another", "user", "21")
-user1 = adduser("user3@example.com", "password", "Jack", "Bobbins", "79")
+adduser("user@example.com", "password", "test", "user", "1612")
+adduser("user2@example.com", "password", "Another", "user", "21")
+adduser("user3@example.com", "password", "Jack", "Bobbins", "79")
+adduser("admin@example.com", "password", "Admin", "User", "")
+
 
 
