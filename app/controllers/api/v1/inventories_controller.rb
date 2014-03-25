@@ -5,7 +5,7 @@ class API::V1::InventoriesController < API::V1::ApplicationController
 
   # GET /requests
   def index
-    respond_with(@event.inventories.all,:except => [:part_id],:include => {
+    respond_with(@event.inventories.order('created_at DESC').all,:except => [:part_id],:include => {
           :part => {:only => [:id, :name, :description, :picture, :year]}
         })
   end

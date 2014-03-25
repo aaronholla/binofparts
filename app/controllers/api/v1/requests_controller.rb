@@ -6,7 +6,7 @@ class API::V1::RequestsController < API::V1::ApplicationController
 
   # GET /requests
   def index
-    respond_with(@event.requests.all,:except => [:part_id],:include => {
+    respond_with(@event.requests.order('updated_at DESC').all,:except => [:part_id],:include => {
           :part => {:only => [:name, :description, :picture, :year]}
         })
   end
