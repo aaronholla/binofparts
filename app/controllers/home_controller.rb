@@ -5,10 +5,10 @@ class HomeController < ApplicationController
 	    @events = []
 	    if current_user.admin?
 		    @event = Event.find_by_key("2014flor")
-		    @requests = @event.requests.where(:event_id => @event.id).order("updated_at DESC")
+		    @requests = @event.requests.order("updated_at DESC")
 
 		    # @events.sort!{|a,b|a.start_date <=> b.start_date}
-		    @myteam = User.where(:admin => true)
+		    @admins = User.where(:admin => true)
 	    else
 		    @team.events.each_with_index do |event, index|
 		       	@events << Event.find_by_key(event)
