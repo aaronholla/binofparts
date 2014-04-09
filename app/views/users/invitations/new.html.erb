@@ -3,10 +3,14 @@
 <%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => {:method => :post} do |f| %>
   <%= devise_error_messages! %>
 
-  <% if current_user.team_number_id.nil? %>
-  <%= f.number_field :team_number_id %>
+  <% if current_user.admin? %>
+  <%= f.label :team_number_id %>
+  <%= f.number_field :team_number_id %><br/>
+
+  <%= f.check_box :admin %>
+  <%= f.label :admin %>
   <% else %>
-  <%= f.hidden_field :team_number_id, :value => "#{current_user.team_number_id}" %>
+  <%= f.hidden_field :team_number_id, :value => current_user.team_number_id %>
   <% end %>
 <% resource.class.invite_key_fields.each do |field| -%>
   <p><%= f.label field %><br />

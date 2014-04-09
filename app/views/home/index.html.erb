@@ -3,7 +3,7 @@
   <div class="col-xs-12 col-md-5 col-md-push-7 table-responsive">
     <table class="table table-condensed table-center" style="display: block;height: 400px;overflow-y: scroll;">
       <tbody>
-        <% if current_user.team_number_id.nil? %>
+        <% if current_user.admin? %>
             <tr>
               <td><h3><%= link_to @event.name, @event_path %></h3><p><%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %></p></td>          
             </tr>
@@ -56,7 +56,7 @@
             </div>
             <% if request.accepted %>
             <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
-            <% elsif request.team_id == current_user.team_number_id || current_user.team_number_id.nil? %>
+            <% elsif request.team_id == current_user.team_number_id || current_user.admin? %>
             <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
             <% elsif request.accepted == false %>
             <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>

@@ -3,12 +3,12 @@ class HomeController < ApplicationController
 	def index
 	    @event_ids = []
 	    @events = []
-	    if current_user.team_number_id.nil?
+	    if current_user.admin?
 		    @event = Event.find_by_key("2014flor")
 		    @requests = @event.requests.where(:event_id => @event.id).order("updated_at DESC")
 
 		    # @events.sort!{|a,b|a.start_date <=> b.start_date}
-		    @myteam = User.where(:team_number_id => current_user.team_number_id)
+		    @myteam = User.where(:admin => true)
 	    else
 		    @team.events.each_with_index do |event, index|
 		       	@events << Event.find_by_key(event)
@@ -33,7 +33,7 @@ class HomeController < ApplicationController
 	private
     # Use callbacks to share common setup or constraints between actions.
     def set_team
-    	if not current_user.team_number_id.nil?
+    	if not current_user.admin?
     		@team = Team.find_by_team_number(current_user.team_number_id)
     	end
     end
