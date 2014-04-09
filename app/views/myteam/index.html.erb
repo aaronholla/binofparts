@@ -1,27 +1,57 @@
 <div class="container">
-  <h1>Team <%= current_user.team_number_id %> </h1>
-   <%= link_to "Invite to Team", new_user_invitation_path, {:class => "btn btn-success"} %>
-  <hr>
- 
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Email</th>
-        <th>Name</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @myteam.each_with_index do |person, index| %>
-        <tr <% if person.id == current_user.id %>class="success"<% end %> >
-          <td><%= index+1 %></td>
-          <td><%= person.email %></td>
-          <td><%= person.first_name %> <%= person.last_name %><% if person.id == current_user.id %> <span class="label label-success">You</span><% end %></td>
+  <% if current_user.admin? %>
+    <h1>Admins</h1>
+     <%= link_to "Invite Admin", new_user_invitation_path, {:class => "btn btn-success"} %>
+    <hr>
+   
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Name</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+
+      <tbody>
+        <% @admins.each_with_index do |person, index| %>
+          <tr <% if person.id == current_user.id %>class="success"<% end %> >
+            <td><%= index+1 %></td>
+            <td><%= person.email %></td>
+            <td><%= person.first_name %> <%= person.last_name %><% if person.id == current_user.id %> <span class="label label-success">You</span><% elsif not person.invitation_token.nil? %>
+                  <span class="label label-warning">Pending</span>
+              <% end %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+  <% if not current_user.team_number_id.nil? %>
+    <h1>Team <%= current_user.team_number_id %> </h1>
+     <%= link_to "Invite to Team", new_user_invitation_path, {:class => "btn btn-success"} %>
+    <hr>
+   
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @myteam.each_with_index do |person, index| %>
+          <tr <% if person.id == current_user.id %>class="success"<% end %> >
+            <td><%= index+1 %></td>
+            <td><%= person.email %></td>
+            <td><%= person.first_name %> <%= person.last_name %><% if person.id == current_user.id %> <span class="label label-success">You</span><% end %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
 
 </div>
