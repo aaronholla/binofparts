@@ -1,7 +1,7 @@
 <div class="container">
 <div class="row">
   <div class="col-xs-12 col-md-5 col-md-push-7 table-responsive">
-    <table class="table table-condensed table-center" style="display: block;height: 400px;overflow-y: scroll;">
+    <table class="table table-condensed table-center" style="height: 250px;overflow-y: scroll;">
       <tbody>
         <% if current_user.admin? %>
             <tr>
@@ -16,8 +16,34 @@
         <% end %>
       </tbody>
     </table>
+    <% if current_user.admin? %>
+    <div><h1>Admins</h1>
+     <%= link_to "Invite Admin", new_user_invitation_path, {:class => "btn btn-success pull-right"} %></div>
     <table class="table">
-      <div class="pull-right"><%= link_to "Invite to Team", new_user_invitation_path, {:class => "btn btn-success"} %></div>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Email</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @admins.each_with_index do |person, index| %>
+          <tr <% if person.id == current_user.id %>class="success"<% end %> >
+            <td><%= index+1 %></td>
+            <td><%= person.email %></td>
+            <td><%= person.first_name %> <%= person.last_name %><% if person.id == current_user.id %> <span class="label label-success">You</span><% elsif not person.invitation_token.nil? %>
+                  <span class="label label-warning">Pending</span>
+              <% end %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+  <div><h1>Team <%= current_user.team_number_id %> </h1>
+     <%= link_to "Invite to Team", new_user_invitation_path, {:class => "btn btn-success pull-right"} %></div>
+    <table class="table">
       <thead>
         <tr>
           <th>#</th>
@@ -36,37 +62,39 @@
         <% end %>
       </tbody>
     </table>
+  <% end %>
+
   </div>
   <div class="col-xs-12 col-md-6 col-md-pull-5 table-responsive">
-  <table class="table">
-    <tbody id="live-feed">
-    <% if @request.blank? %>
-      <tr>
-        <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
-      </tr>
-    <% else %>
-      <% @requests.each do |request| %>
+    <table class="table">
+      <tbody id="live-feed">
+      <% if @request.blank? %>
         <tr>
-          <td class="media">
-            <div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
-            <div class="media-body">
-              <div><h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4></div>
-              <div><p><%= request.part.description %></p></div>
-              <div class="left"><span class="label label-primary">Team <%= request.team_id %></span></div>
-            </div>
-            <% if request.accepted %>
-            <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
-            <% elsif request.team_id == current_user.team_number_id || current_user.admin? %>
-            <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
-            <% elsif request.accepted == false %>
-            <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>
-            <% end %>
-          </td>          
+          <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
         </tr>
+      <% else %>
+        <% @requests.each do |request| %>
+          <tr>
+            <td class="media">
+              <div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
+              <div class="media-body">
+                <div><h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4></div>
+                <div><p><%= request.part.description %></p></div>
+                <div class="left"><span class="label label-primary">Team <%= request.team_id %></span></div>
+              </div>
+              <% if request.accepted %>
+              <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
+              <% elsif request.team_id == current_user.team_number_id || current_user.admin? %>
+              <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
+              <% elsif request.accepted == false %>
+              <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>
+              <% end %>
+            </td>          
+          </tr>
+        <% end %>
       <% end %>
-    <% end %>
-    </tbody>
-  </table>
+      </tbody>
+    </table>
   </div>
 </div>
 </div>
