@@ -1,20 +1,23 @@
-<h2><%= t 'devise.invitations.edit.header' %></h2>
 
-<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put } do |f| %>
+<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put, :class => "col-xs-11 col-sm-5 col-md-4 col-lg-3 center-block" } do |f| %>
   <%= devise_error_messages! %>
   <%= f.hidden_field :invitation_token %>
 
-  <p><%= f.label :first_name %><br />
-  <%= f.text_field :first_name %></p>
+  <div class="form-group">
+  <%= f.text_field :first_name, :placeholder => "First Name", :class => "form-control", :required => true %>
+  </div>
 
-  <p><%= f.label :last_name %><br />
-  <%= f.text_field :last_name %></p>
+  <div class="form-group">
+  <%= f.text_field :last_name, :placeholder => "Last Name", :class => "form-control", :required => true %>
+  </div>
 
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
+  <div class="form-group">
+  <%= f.password_field :password, :placeholder => "Password", :class => "form-control", :required => true %>
+  </div>
 
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
+  <div class="form-group">
+  <%= f.password_field :password_confirmation, :placeholder => "Confirm Password", :class => "form-control", :required => true %>
+  </div>
 
-  <p><%= f.submit t("devise.invitations.edit.submit_button") %></p>
+  <%= f.submit t("devise.invitations.edit.submit_button"),:value => "Create Account", :class => "btn btn-success pull-right" %></p>
 <% end %>
