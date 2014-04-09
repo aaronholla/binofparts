@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 	def configure_permitted_parameters
 	  # Only add some parameters
 	  devise_parameter_sanitizer.for(:accept_invitation).concat [:first_name, :last_name]
-	  devise_parameter_sanitizer.for(:invite).concat [:team_number_id]
+	  devise_parameter_sanitizer.for(:invite).concat [:team_number_id, :admin]
 	  devise_parameter_sanitizer.for(:account_update) do |u|
 	    u.permit(:first_name, :last_name, :email, :password, :password_confirmation, :current_password)
 	  end
