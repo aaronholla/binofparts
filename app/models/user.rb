@@ -6,7 +6,11 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   before_save :ensure_authentication_token
- 
+  
+  def send_reset_password_instructions
+    super if invitation_token.nil?
+  end
+
   def ensure_authentication_token
     if authentication_token.blank?
       self.authentication_token = generate_authentication_token
