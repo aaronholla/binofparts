@@ -14,7 +14,7 @@
 	<%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %>
 	<hr>
 
-	<%= link_to 'View other Events', events_path %>
+	<div><%= link_to 'View other Events', events_path %></div>
 	<% if user_signed_in? %>
 		<div class="modal fade request-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-lg">
@@ -59,10 +59,14 @@
 		  </div>
 		</div>
 	<% end %>
-	<div class="col-xs-12 col-sm-6 col-lg-6">
-	<table class="table table-center ">
+	<div class="col-md-8 col-md-offset-2 table-responsive">
+	<table class="table">
       <tbody>
-      	<% if @requests.presence %>
+      <% if @requests.blank? %>
+        <tr>
+          <td><h1 style="text-align:center;"><small>No Requests.</small></h1></td>          
+        </tr>
+      <% else %>
         <% @requests.each do |request| %>
           <tr>
             <td class="media">
@@ -70,26 +74,22 @@
               <div class="media-body">
                 <div><h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4></div>
                 <div><p><%= request.part.description %></p></div>
-                <div class="left"><span class="label label-primary">Team <%= request.team.team_number %></span></div>
+                <div class="left"><span class="label label-primary">Team <%= request.team_id %></span></div>
               </div>
-              <% if request.accepted %>
-              <div class="right"><p>Accepted By</p><span class="label label-success">Team <% if request.accepted_by.nil? %>FIRST<% else %><%= request.accepted_by %><% end %></span></div>
+              <% if current_user.admin? %>
+              <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
               <% end %>
-              <% if user_signed_in? %>
-                <% if request.team_id == current_user.team_number_id && request.accepted == false || current_user.team_number_id.nil? %>
-                <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
-                <% elsif request.accepted == false %>
-                <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>
-                <% end %>
+              <% if request.accepted %>
+              <div class="right"><p>Accepted By</p><span class="label label-success"><% if request.accepted_by.nil? %>FIRST<% else %>Team <%= request.accepted_by %><% end %></span></div>
+              <% elsif request.team_id == current_user.team_number_id %>
+              <div class="right"><%= button_to "Delete", event_request_path(:event_id => request.event_id, :id => request.id), :method => :delete, :class => "btn btn-danger" %></div>
+              <% elsif request.accepted == false %>
+              <div class="right"><%= button_to "Accept", event_accept_request_path(:event_id => request.event_id, :id => request.id), :class => "btn btn-success" %></div>
               <% end %>
             </td>          
           </tr>
         <% end %>
-   		<% else %>
-			<tr>
-				<td><div style="text-align:center;"><h1><small>No Requests</small></h1></div></td>
-			</tr>
-		<% end %>
+      <% end %>
       </tbody>
     </table>
     </div>
