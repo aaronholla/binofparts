@@ -1,11 +1,11 @@
 <div class="container">
 <div class="row">
   <div class="col-xs-12 col-md-5 col-md-push-7 table-responsive">
-    <table class="table table-condensed table-center" style="height: 250px;overflow-y: scroll;">
+    <table class="table table-condensed table-center" style="height: 200px;overflow-y: scroll;">
       <tbody>
         <% if current_user.admin? %>
             <tr>
-              <td><h3><%= link_to @event.name, @event_path %></h3><p><%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %></p></td>          
+              <td><h3><%= link_to @event.name, event_path(@event.key) %></h3><p><%= @event.start_date.strftime("%A %B %d") %> - <%= @event.end_date.strftime("%A %B %d") %></p></td>          
             </tr>
         <% else %>
           <% @events.each do |event| %>
