@@ -2,7 +2,8 @@
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "col-sm-5 col-md-4 col-lg-3 center-block"}) do |f| %>
+<div class="row">
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "col-xs-11 col-sm-5 col-md-4 col-lg-3 center-block"}) do |f| %>
 	<div class="form-group">
 		<%= f.email_field :email, :placeholder => "Email", :class => "form-control", :required => true, :autofocus => true %>
 	</div>
@@ -19,5 +20,9 @@
 
 	  <div><%= f.submit "Sign in", :class => "btn btn-success pull-right" %></div>
 <% end %>
-
-<%= render "devise/shared/links" %>
+</div>
+<div class="row">
+	<div class="col-sm-5 col-md-4 col-lg-3 center-block shared-links">
+		<%= render "devise/shared/links" %>
+	</div>
+</div>
