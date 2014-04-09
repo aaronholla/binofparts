@@ -18,6 +18,9 @@ html{
 .alert{
 	margin-bottom: 0px;
 }
+.center-block {
+    float: none;
+}
 .category{
 	height: 40px;
 	padding: 15px;
