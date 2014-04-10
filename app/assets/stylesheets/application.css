@@ -57,8 +57,12 @@ html{
 .media-body{
 	float: left;
 }
+.media-body p{
+	width: 280px;
+}
 .media-heading{
-	width: 300px;
+	font-size: 14px;
+	width: 250px;
 }
 .media .right{
 	float: right;

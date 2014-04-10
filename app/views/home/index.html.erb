@@ -59,7 +59,7 @@
   <% end %>
 
   </div>
-  <div class="col-xs-12 col-md-6 col-lg-7 col-md-pull-5 table-responsive">
+  <div class="col-xs-12 col-md-7 col-lg-7 col-md-pull-5 table-responsive">
     <table class="table">
       <tbody id="live-feed">
       <% if @requests.blank? %>
@@ -72,7 +72,7 @@
             <td class="media">
               <div class="left"><div class="imgcenter"></div><%= image_tag("kop#{request.part.year}/#{request.part.picture}", class: "media-object") %></div>
               <div class="media-body">
-                <div><h4 class="media-heading"><%= request.part.name %> <small>Quantity <b><%=  request.qty %></b></small></h4></div>
+                <div><h6 class="media-heading"><b><%= request.part.name %></b> <small>Quantity <b><%=  request.qty %></b></small></h6></div>
                 <div><p><%= request.part.description %></p></div>
                 <div class="left"><span class="label label-primary">Team <%= request.team_id %></span></div>
               </div>
