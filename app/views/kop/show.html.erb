@@ -1,4 +1,5 @@
 <% content_for :title, "- #{params[:id]} Kit of Parts" %>
+<% track_event("View Kit of Parts", year: params[:id]) %>
 <div class="container">
 <div class="row">
 	<% @parts.in_groups_of(@half).each do |parts_array| %>

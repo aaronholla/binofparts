@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  around_filter :append_event_tracking_tags
   before_action :set_team_events
   before_action :set_event, only: [:show]
   helper_method :sort_column, :sort_direction

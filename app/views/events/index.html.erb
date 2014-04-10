@@ -1,4 +1,5 @@
 <% content_for :title, "- Events" %>
+<% track_event("Loaded Events") %>
 <div class="container">
   <% if user_signed_in? && current_user.team_number_id.presence %>
   <h1>Team <%= current_user.team_number_id %><small> <%= @your_events.count %> Events</small></h1>

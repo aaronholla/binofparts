@@ -1,4 +1,5 @@
 class TeamsController < ApplicationController
+  around_filter :append_event_tracking_tags
   before_action :set_team, only: [:show]
   helper_method :sort_column, :sort_direction
 
