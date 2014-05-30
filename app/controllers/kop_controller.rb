@@ -1,5 +1,4 @@
 class KopController < ApplicationController
-	around_filter :append_event_tracking_tags
 	before_action :set_year, only: [:show]
 
 	def show

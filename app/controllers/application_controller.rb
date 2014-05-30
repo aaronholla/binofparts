@@ -3,6 +3,17 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  around_filter :append_event_tracking_tags
+  
+  def mixpanel_distinct_id
+  	if user_signed_in?
+  		current_user.id
+  	end
+  end
+  def mixpanel_name_tag
+    current_user && current_user.email
+  end
+  
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
 	protected

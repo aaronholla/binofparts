@@ -30,9 +30,7 @@ Binofparts::Application.routes.draw do
 
   get 'myteam' => 'myteam#index'
 
-  devise_for :users, :controllers => { :invitations => 'users/invitations', :registrations => "settings" }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  devise_for :users, :controllers => { :invitations => 'users/invitations', :registrations => "settings", sessions: "users/sessions" }, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
 
   # You can have the root of your site routed with "root"
   authenticated :user do
@@ -41,8 +39,8 @@ Binofparts::Application.routes.draw do
       get 'home/update_feed' => 'home#update_feed'
       get '/new_request/set_cat' => 'events#set_cat'
       get '/new_request/set_part' => 'events#set_part'
-      get 'settings' => 'devise/registrations#edit', :as => 'edit_user_registration'    
-      patch 'users/:id' => 'devise/registrations#update', :as => 'user_registration' 
+      get 'settings' => 'devise/registrations#edit', :as => 'edit_user_registration'
+      patch 'users/:id' => 'devise/registrations#update', :as => 'user_registration'
       delete 'users/:id' => 'devise/registrations#destroy', :as => 'delete_user_registration'
     end
   end
