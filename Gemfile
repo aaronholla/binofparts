@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 1.2'
 
 
 group :development do
-  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
+  gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
+  gem 'rb-inotify', '>= 0.8.8'
   gem 'thin'
 end
 
