@@ -119,3 +119,8 @@ exec { "${as_vagrant} 'gem install bundler --no-rdoc --no-ri'":
 exec { 'update-locale':
   command => 'update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8'
 }
+
+file { '/etc/motd':
+  content => "Welcome to your Bin of Parts Development Virtual Machine!
+              Created by Aaron Holland.\n"
+}
