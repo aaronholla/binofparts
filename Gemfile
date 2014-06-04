@@ -27,10 +27,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
 
 group :development do
   gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
@@ -38,9 +34,7 @@ group :development do
 end
 
 gem 'pg'
-
 gem 'will_paginate', '~> 3.0'
-
 gem 'event_tracker'
 
 group :production do
