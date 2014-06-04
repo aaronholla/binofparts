@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.1.1'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 gem 'devise'
 gem 'devise_invitable'
 
@@ -36,11 +34,21 @@ end
 
 group :development do
   gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
+  gem 'thin'
 end
+
+gem 'pg'
 
 gem 'will_paginate', '~> 3.0'
 
 gem 'event_tracker'
+
+group :production do
+  gem 'memcachier', '~> 0.0.2'
+  gem 'newrelic_rpm', '~> 3.7.3'
+  gem 'heroku-deflater', '~> 0.5.1'
+  gem 'unicorn'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
