@@ -8,5 +8,5 @@
 
 puts "You are in #{Rails.env.downcase} mode.\n"
 
-load(Rails.root.join( 'db', 'seeds', "#{Rails.env.downcase}.rb"))
+load(File.join(Rails.root, 'db', 'seeds', "#{Rails.env.downcase}.rb"))
 
