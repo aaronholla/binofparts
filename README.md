@@ -5,7 +5,7 @@ Bin of Parts is built using the Ruby on Rails framework.
 If you would like to contribute to this project please follow these setup instructions below.
 
 
-[**Fork**](https://github.com/BinofParts/binofparts/fork) this Repository!  
+[Fork this Repository! ](https://github.com/BinofParts/binofparts/fork) 
 
 A Vagrantfile is provided to smooth the development setup process. To use the preconfigured Virtual Machine you will have to install VirtualBox and Vagrant.
 
@@ -34,4 +34,4 @@ A Vagrantfile is provided to smooth the development setup process. To use the pr
 9.  Install project dependencies.
 10. Setup the database.
 11. Start local Rails Server.
-12. You're good to go! You can access the site at [localhost:3000](localhost:3000)
+12. You're good to go! You can access the site at [localhost:3000](http://localhost:3000)
