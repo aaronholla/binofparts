@@ -1,4 +1,8 @@
-Setup Instructions
+h1. Contributing?
+
+Fork this Repo.
+
+h2. Setup Instructions
 
 `vagrant up`
 `vagrant ssh`
