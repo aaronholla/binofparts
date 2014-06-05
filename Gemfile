@@ -35,6 +35,7 @@ group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
   gem 'rb-inotify', '>= 0.8.8'
   gem 'thin'
+  gem 'quiet_assets'
 end
 
 gem 'rspec-rails', '~> 3.0.0', :group => [:test, :development]
