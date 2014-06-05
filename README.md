@@ -1,8 +1,8 @@
-h1. Contributing?
+Contributing?
 
 Fork this Repo.
 
-h2. Setup Instructions
+Setup Instructions
 
 `vagrant up`
 `vagrant ssh`
