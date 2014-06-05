@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'pg'
 gem 'will_paginate', '~> 3.0'
 gem 'event_tracker'
+#gem 'dragonfly', '~> 1.0.5'
 
 group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
