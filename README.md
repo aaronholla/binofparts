@@ -1,3 +1,7 @@
+Contributing?
+
+Fork this Repo.
+
 Setup Instructions
 
 `vagrant up`
