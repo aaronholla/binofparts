@@ -27,6 +27,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'pg'
+gem 'will_paginate', '~> 3.0'
+gem 'event_tracker'
 
 group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
@@ -34,9 +37,11 @@ group :development do
   gem 'thin'
 end
 
-gem 'pg'
-gem 'will_paginate', '~> 3.0'
-gem 'event_tracker'
+gem 'rspec-rails', '~> 3.0.0', :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+end
 
 group :production do
   gem 'memcachier', '~> 0.0.2'
