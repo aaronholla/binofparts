@@ -25,6 +25,7 @@ class { 'apt_get_update':
   stage => preinstall
 }
 
+
 # --- PostgreSQL ---------------------------------------------------------------
 
 class install_postgres {
@@ -113,11 +114,18 @@ exec { "${as_vagrant} 'gem install bundler --no-rdoc --no-ri'":
   require => Exec['install_ruby']
 }
 
+
 # --- Locale -------------------------------------------------------------------
 
 # Needed for docs generation.
 exec { 'update-locale':
   command => 'update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8'
+}
+
+exec { 'update-encoding':
+  command => 'pg_dropcluster --stop 9.1 main ; pg_createcluster --start --locale en_US.UTF-8 9.1 main',
+  unless  => 'sudo -u postgres psql -t -c "\l" | grep template1 | grep -q UTF',
+  require => Class['postgresql::server']
 }
 
 file { '/etc/motd':
