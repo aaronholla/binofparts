@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140409064532) do
+ActiveRecord::Schema.define(version: 20140605062916) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "events", force: true do |t|
     t.datetime "created_at"
@@ -56,26 +59,26 @@ ActiveRecord::Schema.define(version: 20140409064532) do
     t.datetime "updated_at"
   end
 
-  add_index "requests", ["event_id"], name: "index_requests_on_event_id"
-  add_index "requests", ["part_id"], name: "index_requests_on_part_id"
-  add_index "requests", ["team_id"], name: "index_requests_on_team_id"
+  add_index "requests", ["event_id"], name: "index_requests_on_event_id", using: :btree
+  add_index "requests", ["part_id"], name: "index_requests_on_part_id", using: :btree
+  add_index "requests", ["team_id"], name: "index_requests_on_team_id", using: :btree
 
   create_table "teams", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "team_number"
     t.string   "nickname"
-    t.string   "name"
+    t.text     "name"
     t.string   "key"
     t.string   "website"
     t.string   "locality"
     t.string   "region"
     t.string   "country_name"
     t.string   "location"
-    t.text     "events",       limit: 255, default: "{}"
+    t.text     "events",       default: "{}"
   end
 
-  add_index "teams", ["team_number"], name: "index_teams_on_team_number", unique: true
+  add_index "teams", ["team_number"], name: "index_teams_on_team_number", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -105,9 +108,9 @@ ActiveRecord::Schema.define(version: 20140409064532) do
     t.boolean  "admin"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true
-  add_index "users", ["invited_by_id"], name: "index_users_on_invited_by_id"
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true, using: :btree
+  add_index "users", ["invited_by_id"], name: "index_users_on_invited_by_id", using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
