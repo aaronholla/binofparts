@@ -4,4 +4,7 @@ rvm:
 env:
   global:
     - RAILS_ENV=test
+before_script:
+  - psql -c 'create database binofparts_test;' -U postgres
+  - bundle exec rake db:migrate
 script: bundle exec rake spec
