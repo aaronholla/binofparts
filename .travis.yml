@@ -2,10 +2,11 @@ language: ruby
 rvm:
  - 2.1.1
 env:
-  - RAILS_ENV=test
-  - DB=postgresql
+  global:
+    - RAILS_ENV=test
+    - DB=postgresql
 before_script:
   - psql -c 'create database binofparts_test;' -U postgres
-  - RAILS_ENV=test bundle exec rake db:migrate
+  - RAILS_ENV=test bundle exec rake rake db:test:prepare
 script: 
   -bundle exec rake spec
