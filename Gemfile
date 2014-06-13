@@ -39,10 +39,14 @@ group :development do
   gem 'quiet_assets'
 end
 
-gem 'rspec-rails', '~> 3.0.0', :group => [:test, :development]
+group :test, :development do
+  gem 'rspec-rails', '~> 3.0.0'
+end
+
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
+  gem 'fuubar', '~> 2.0.0.rc1'
 end
 
 group :production do
