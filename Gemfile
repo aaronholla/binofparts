@@ -32,6 +32,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'event_tracker'
 #gem 'dragonfly', '~> 1.0.5'
 gem 'coveralls', require: false
+gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
