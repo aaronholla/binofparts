@@ -3,7 +3,9 @@ rvm:
  - 2.1.1
 env: 
   - RAILS_ENV=test
-  - CODECLIMATE_REPO_TOKEN=fd5da85d38b27138bcf662513e61190ad53c34c035af216f75b01a8c422cd648 
+addons:
+   code_climate:
+     repo_token: fd5da85d38b27138bcf662513e61190ad53c34c035af216f75b01a8c422cd648
 before_script:
   - psql -c 'create database binofparts_test;' -U postgres
   - cp config/database-travis.yml config/database.yml
