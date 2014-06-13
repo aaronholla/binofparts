@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/BinofParts/binofparts.svg?branch=master)](https://travis-ci.org/BinofParts/binofparts) [![Coverage Status](https://img.shields.io/coveralls/BinofParts/binofparts.svg)](https://coveralls.io/r/BinofParts/binofparts?branch=master)
+
 Contributing?
 ============
 
