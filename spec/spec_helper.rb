@@ -14,7 +14,11 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 require 'capybara/rspec'
+require 'coveralls'
+Coveralls.wear!
 
 RSpec.configure do |config|
 # The settings below are suggested to provide a good initial experience

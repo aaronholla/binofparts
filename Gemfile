@@ -31,6 +31,8 @@ gem 'pg'
 gem 'will_paginate', '~> 3.0'
 gem 'event_tracker'
 #gem 'dragonfly', '~> 1.0.5'
+gem 'coveralls', require: false
+gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
@@ -39,10 +41,14 @@ group :development do
   gem 'quiet_assets'
 end
 
-gem 'rspec-rails', '~> 3.0.0', :group => [:test, :development]
+group :test, :development do
+  gem 'rspec-rails', '~> 3.0.0'
+end
+
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
+  gem 'fuubar', '~> 2.0.0.rc1'
 end
 
 group :production do
