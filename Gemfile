@@ -49,6 +49,7 @@ group :production do
   gem 'memcachier', '~> 0.0.2'
   gem 'newrelic_rpm', '~> 3.7.3'
   gem 'heroku-deflater', '~> 0.5.1'
+  gem 'rails_12factor'
   gem 'unicorn'
 end
 
