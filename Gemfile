@@ -32,6 +32,10 @@ group :development do
   gem 'quiet_assets'
 end
 
+group :assets do
+  gem 'asset_sync'
+end
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
