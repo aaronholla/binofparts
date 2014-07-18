@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Parts API", :type => :request do
 
-  part = FactoryGirl.create(:part)
+  part = FactoryGirl.create(:part, :category => "Motors")
   category_part = FactoryGirl.create(:part, :category => "Motors")
 
   describe "#show" do
@@ -54,7 +54,7 @@ describe "Parts API", :type => :request do
 
       it 'has one part in response' do
         json = JSON.parse(response.body)
-        expect(json['parts'].length).to eq(1)
+        expect(json['parts']).to have(1).items
       end
     end
 

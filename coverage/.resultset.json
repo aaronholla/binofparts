@@ -140,6 +140,23 @@
         1,
         null
       ],
+      "/binofparts/config/initializers/asset_sync.rb": [
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null
+      ],
       "/binofparts/config/initializers/backtrace_silencers.rb": [
         null,
         null,
@@ -770,6 +787,10 @@
       "/binofparts/app/models/part.rb": [
         1,
         1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/binofparts/spec/requests/api/v1/events_spec.rb": [
@@ -1086,17 +1107,17 @@
         2,
         null,
         null,
+        1,
+        2,
         null,
+        null,
+        1,
         1,
         5,
         null,
         null,
         1,
-        1,
         5,
-        null,
-        null,
-        1,
         5,
         null,
         null,
@@ -1106,6 +1127,6 @@
         null
       ]
     },
-    "timestamp": 1403415902
+    "timestamp": 1404950231
   }
 }

@@ -13,6 +13,7 @@ Binofparts::Application.routes.draw do
       resources :teams, only: [:index, :show]
       get 'kop/:id' => 'kop#show'
       resources :parts, only: [:index, :show]
+      get 'parts/category/:id' => 'parts#category'
     end
   end
 
