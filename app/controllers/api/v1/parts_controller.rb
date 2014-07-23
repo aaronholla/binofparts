@@ -12,7 +12,7 @@ class API::V1::PartsController < API::V1::BaseController
   end
 
   def category
-    respond_with(@parts, :only => [:name, :description, :number, :qty, :picture, :year])
+    respond_with(@parts, :only => [:id, :name, :description, :number, :qty, :picture, :year])
   end
 
   private
