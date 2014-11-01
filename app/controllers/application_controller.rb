@@ -13,6 +13,10 @@ class ApplicationController < ActionController::Base
   def mixpanel_name_tag
     current_user && current_user.email
   end
+
+  ensure_security_headers(
+    :hsts => false
+  )
   
   before_filter :configure_permitted_parameters, if: :devise_controller?
 

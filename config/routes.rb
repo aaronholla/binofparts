@@ -12,7 +12,8 @@ Binofparts::Application.routes.draw do
       end
       resources :teams, only: [:index, :show]
       get 'kop/:id' => 'kop#show'
-      get 'parts/:id' => 'parts#category'
+      resources :parts, only: [:index, :show]
+      get 'parts/category/:id' => 'parts#category'
     end
   end
 
@@ -24,7 +25,7 @@ Binofparts::Application.routes.draw do
 
   resources :teams, only: %w(index show)
 
-  get 'about' => 'about#index'  
+  get 'about' => 'about#index'
   get 'kop' => 'kop#index'
   get 'kop/:id' => 'kop#show', :as => 'kop_year'
 
