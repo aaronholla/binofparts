@@ -137,3 +137,6 @@ th .desc {
 .footer #links-xs{
 	text-align: center;
 }
+.footer #heroku img{
+	max-height: 40px;
+}
