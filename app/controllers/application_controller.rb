@@ -3,8 +3,6 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_filter :expire_hsts
-
   around_filter :append_event_tracking_tags
   
   def mixpanel_distinct_id
@@ -15,6 +13,10 @@ class ApplicationController < ActionController::Base
   def mixpanel_name_tag
     current_user && current_user.email
   end
+
+  ensure_security_headers(
+    :hsts => false
+  )
   
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
@@ -28,10 +30,4 @@ class ApplicationController < ActionController::Base
 	    u.permit(:first_name, :last_name, :email, :password, :password_confirmation, :current_password)
 	  end
 	end
-
-  private
-
-  def expire_hsts
-    response.headers["Strict-Transport-Security"] = 'max-age=0'
-  end
 end

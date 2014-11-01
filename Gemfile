@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'pg'
 gem 'will_paginate', '~> 3.0'
 gem 'event_tracker'
+gem 'secure_headers'
 #gem 'dragonfly', '~> 1.0.5'
 
 # Continuous Integration
