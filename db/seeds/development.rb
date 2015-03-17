@@ -100,12 +100,12 @@ end
 puts "All 2014 Parts Added."
 
 
-def adduser(email, password, first_name, last_name, team_number)
-  @user = User.invite!(:email => email, :first_name => first_name, :last_name => last_name, :team_number_id => team_number ) do |u|
+def adduser(email, password, first_name, last_name, team_number, admin)
+  @user = User.invite!(:email => email, :first_name => first_name, :last_name => last_name, :team_number_id => team_number, :admin => admin ) do |u|
     u.skip_invitation = true
   end
   token = Devise::VERSION >= "3.1.0" ? @user.instance_variable_get(:@raw_invitation_token) : @user.invitation_token
-  User.accept_invitation!(:invitation_token => token, :password => password, :password_confirmation => password, :first_name => first_name, :last_name => last_name, :team_number_id => team_number )
+  User.accept_invitation!(:invitation_token => token, :password => password, :password_confirmation => password, :first_name => first_name, :last_name => last_name, :team_number_id => team_number, :admin => admin )
 
   puts "Created User\n Email: #{email}\n Password: #{password}\n Name: #{first_name} #{last_name} \n Team: #{team_number} \n"
   @user
@@ -114,10 +114,10 @@ end
 puts "\nCreating Test Users...
 ================================================\n"
 
-adduser("user@example.com", "password", "test", "user", "1612")
-adduser("user2@example.com", "password", "Another", "user", "21")
-adduser("user3@example.com", "password", "Jack", "Bobbins", "79")
-adduser("admin@example.com", "password", "Admin", "User", "")
+adduser("user@example.com", "password", "test", "user", "1612", "false")
+adduser("user2@example.com", "password", "Another", "user", "21", "false")
+adduser("user3@example.com", "password", "Jack", "Bobbins", "79", "false")
+adduser("admin@example.com", "password", "Admin", "User", "", "true")
 
 
 

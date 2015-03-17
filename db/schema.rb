@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "events", force: true do |t|
+  create_table "events", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "key"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
     t.boolean  "official"
   end
 
-  create_table "inventories", force: true do |t|
+  create_table "inventories", force: :cascade do |t|
     t.integer  "part_id"
     t.integer  "event_id"
     t.integer  "qty"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
     t.datetime "updated_at"
   end
 
-  create_table "parts", force: true do |t|
+  create_table "parts", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.string   "number"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
     t.datetime "updated_at"
   end
 
-  create_table "requests", force: true do |t|
+  create_table "requests", force: :cascade do |t|
     t.integer  "part_id"
     t.integer  "qty"
     t.integer  "event_id"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
   add_index "requests", ["part_id"], name: "index_requests_on_part_id", using: :btree
   add_index "requests", ["team_id"], name: "index_requests_on_team_id", using: :btree
 
-  create_table "teams", force: true do |t|
+  create_table "teams", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "team_number"
@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 20140605062916) do
 
   add_index "teams", ["team_number"], name: "index_teams_on_team_number", unique: true, using: :btree
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: ""
     t.string   "reset_password_token"
