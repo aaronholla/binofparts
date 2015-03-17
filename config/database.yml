@@ -6,8 +6,10 @@
 development:
   adapter: postgresql
   encoding: UTF8
+  host: localhost
   database: binofparts_dev
-  username: vagrant
+  username: postgres_db
+  password: postgres_db
   pool: 5
   timeout: 5000
 
@@ -17,7 +19,9 @@ development:
 test:
   adapter: postgresql
   encoding: UTF8
+  host: localhost
   database: binofparts_test
-  username: vagrant
+  username: postgres_db
+  password: postgres_db
   pool: 5
   timeout: 5000
