@@ -101,12 +101,16 @@ namespace :update do
 	end
 	desc "Update all teams."
 	task :teams => [:environment] do
-
+		#open file with a+
+		#start loop
+		#write each line to file
+		#end loop
+		#close file
 		puts "This is going to take a while..."
 
 		@teams = []
-		(1..5352).each do |i|
-			url = URI.parse("http://www.thebluealliance.com/api/v1/team/details?team=frc#{i}")
+		(1..5786).each do |i|
+			url = URI.parse("http://www.thebluealliance.com/api/v2/team/frc#{i}")
 			req = Net::HTTP::Get.new(url.to_s)
 			req.add_field("X-TBA-App-Id", "binofparts:teams_scraper:1")
 			res = Net::HTTP.start(url.host, url.port) {|http|
@@ -131,7 +135,7 @@ namespace :update do
 	desc "Update all events."
 	task :events => [:environment] do
 
-		url = URI.parse("http://www.thebluealliance.com/api/v1/events/list")
+		url = URI.parse("http://www.thebluealliance.com/api/v2/events/")
 		req = Net::HTTP::Get.new(url.path)
 		req.add_field("X-TBA-App-Id", "binofparts:events_scraper:1")
 		res = Net::HTTP.start(url.host, url.port) {|http|
