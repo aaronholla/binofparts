@@ -41,6 +41,7 @@ group :test, :development do
   gem 'guard-rspec', require: false
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
+  gem "database_cleaner"
 end
 
 group :test do
