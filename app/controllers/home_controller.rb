@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 	before_action :set_team, only: [:index]
-	before_action :get_event_ids
+	#before_action :get_event_ids
 	def index
 	    if current_user.admin?
 			@requests = Request.where(:event_id => @event_ids).order("updated_at DESC")
