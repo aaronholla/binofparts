@@ -3,6 +3,8 @@
 Contributing?
 ============
 
+[![Join the chat at https://gitter.im/BinofParts/binofparts](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BinofParts/binofparts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Bin of Parts is built using the Ruby on Rails framework.   
 If you would like to contribute to this project please follow these setup instructions below.
 
