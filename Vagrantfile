@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure('2') do |config|
-  config.vm.box = 'lazygray/heroku-cedar-14'
+  config.vm.box = 'binofparts'
   config.vm.hostname = 'binofparts'
   config.vm.define "binofparts"
   config.vm.provider :virtualbox do |vb|
