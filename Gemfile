@@ -31,6 +31,7 @@ group :development do
   gem 'rails-dev-boost', :github => 'thedarkone/rails-dev-boost'
   gem 'thin'
   gem 'quiet_assets'
+  gem "brakeman", :require => false
 end
 
 group :assets do
