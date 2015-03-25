@@ -1,11 +1,10 @@
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show]
-  helper_method :sort_column, :sort_direction
 
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.order(sort_column + " " + sort_direction).paginate(:page => params[:page], :per_page => 600)
+    @teams = Team.order('team_number asc').paginate(:page => params[:page], :per_page => 600)
   end
 
   # GET /teams/1
@@ -26,13 +25,5 @@ class TeamsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def team_params
       params[:team]
-    end
-
-    def sort_column
-      Team.column_names.include?(params[:sort]) ? params[:sort] : "team_number"
-    end
-    
-    def sort_direction
-      %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
     end
 end
