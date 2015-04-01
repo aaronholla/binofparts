@@ -44,6 +44,7 @@ group :test, :development do
   gem 'rb-inotify', :require => false
   gem 'rb-fsevent', :require => false
   gem "database_cleaner"
+  gem 'spring-commands-rspec'
 end
 
 group :test do
