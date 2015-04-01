@@ -12,7 +12,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder ".", "/binofparts"
+  config.vm.synced_folder ".", "/binofparts", type: "rsync"
 
   config.vm.post_up_message = "
     Welcome to the Bin of Parts VM!
@@ -24,7 +24,7 @@ Vagrant.configure('2') do |config|
     \'bundle\' and then setup the database by running \'rake db:setup\'. 
     
     You can then run \'rails s\' to start the server. 
-    Navigate to http://192.168.2.21 to view the site.
+    Navigate to http://localhost:3000 to view the site.
 
     Please be sure to follow @binofparts on twitter for the latest updates.
 
