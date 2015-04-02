@@ -17,25 +17,27 @@ A Vagrantfile is provided to smooth the development setup process. To use the pr
 [Install Vagrant](https://www.vagrantup.com/)
 
 ##### Quick Setup  
-  ````
-    $ git clone https://github.com/USERNAME/binofparts.git
-    $ cd binofparts
-    $ vagrant up
-    $ vagrant ssh
-    $ cd /binofparts
-    $ bundle
-    $ rake db:setup
-    $ rails s
-  ````
+1. Clone fork to local computer `git clone https://github.com/USERNAME/binofparts.git`
+2. Navigate to root directory. `cd binofparts`
+3. Setup the VM.`vagrant up`
+4. SSH Into the VM. `vagrant ssh`
+5. Change to project root directory. `cd /binofparts`
+6. Install project dependencies. `bundle`
+7. Setup the database. `rake db:setup`
+8. Start local Rails Server. `rails s`
+9. You're good to go! You can access the site at [localhost:3000](http://localhost:3000)
+
   **_Warning: Make sure to replace USERNAME with your github username when cloning_**
 
-##### Detailed Instructions
-1.  Clone fork to local computer
-2.  Navigate to root directory.
-6.  Setup the VM. _This may take a few minutes_
-7.  SSH Into the VM.
-8.  Change to the project root.
-9.  Install project dependencies.
-10. Setup the database.
-11. Start local Rails Server.
-12. You're good to go! You can access the site at [localhost:3000](http://localhost:3000)
+##### Testing
+The project is tested using rspec and capybara, along with factorygirl for factories. It is already setup to use Guard-rspec. 
+This way you can use guard to automatically detect any changes to specs and run the tests for you.
+
+To run guard:
+
+1. startup the vagrant vm `vagrant up`
+2. ssh into the box `vagrant ssh`
+3. `cd /binofparts`
+4. run guard with polling enabled `bundle exec guard -pc`
+
+**_TIP: If running guard uses to much of your cpu you can limit cpu usage. Add the `-l 10` flag onto the end of the guard command._**
