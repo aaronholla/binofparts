@@ -5,7 +5,8 @@ env:
   - RAILS_ENV=test
 addons:
    code_climate:
-     repo_token: <%= ENV["Code_Climate_Token"] %>
+     repo_token: 
+        secure: "ZdM1Wk3BSxJXpGeiqtl2BRmXoCAhe7gHWJ7UtYWkI7CjgmGllA/FNVLbw9XKvYTIkVmDuxBV7pXlovSxJ48fgE6gB0sKKT9NIWeE8k/mWbpsVHMygXszOElXxQtqng9QutLKSbUQOmZMS5AB61F4a9TsojcK7zxXv4LsJxkQlAs="
 before_script:
   - psql -c 'create database binofparts_test;' -U postgres
   - cp config/database-travis.yml config/database.yml
