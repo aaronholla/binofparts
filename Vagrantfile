@@ -12,7 +12,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder ".", "/binofparts", type: "rsync"
+  config.vm.synced_folder ".", "/binofparts"
 
   config.vm.post_up_message = "
     Welcome to the Bin of Parts VM!
