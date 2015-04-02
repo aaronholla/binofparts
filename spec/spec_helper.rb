@@ -18,7 +18,7 @@ require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 require 'capybara/rspec'
 require 'coveralls'
-Coveralls.wear!
+Coveralls.wear!('rails')
 
 RSpec.configure do |config|
 # The settings below are suggested to provide a good initial experience
