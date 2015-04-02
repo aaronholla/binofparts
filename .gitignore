@@ -19,6 +19,11 @@
 
 /config/application.yml
 /ignore
+/coverage/*.json
 
 # Ignore vagrant directory
 /.vagrant
+
+coverage/.last_run.json
+
+coverage/.resultset.json
